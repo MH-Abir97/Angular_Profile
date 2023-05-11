@@ -1,0 +1,96 @@
+
+    .example-container{
+        font-family: "Open Sans", sans-serif;
+        color: #272829;
+    }
+.profileImage{
+    margin-top: 45px;
+}
+
+.profilePicture{
+    height: 120px;
+    width: 120px;
+    border: 8px solid #2c2f3f;
+    border-radius: 100%;
+    margin: 18px auto;
+    display: block;
+    padding: 5px
+   
+}
+
+.sideNavBar{
+    position: fixed;width: 300px;
+    background-color: #272829;
+    color: #fff;
+    box-shadow: 5px 10px #1f7bc5;
+    margin-top: -20px;
+}
+
+.socialLink{
+    margin-left: 45px;
+}
+.socialLink a{
+   
+    font-size: 18px;
+    display: inline-block;
+    background: #2c2f3f;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 18px;
+    transition: 0.3s;
+   
+}
+
+.navBarManue a{
+
+     font-size: 18px;
+    display: inline-block;
+   
+   
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s;
+    color: #6f7180;
+  
+}
+
+.navBarManue ul li{
+    text-decoration: none;
+    list-style-type:none;
+    
+  
+}
+
+.navBarManue ul li i{
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;
+  
+}
+.navBarManue   a:hover   {
+    color: #fff;
+}
+ i:hover {
+    color: #149ddd !important;
+} 
+
+
+.mainContent{
+    margin: auto;
+    margin: 0px 10px 10px 10px;
+}
+
+.mainContent .mainContentInsideArea{
+    margin-left: 30px;
+  
+}
+  
+  

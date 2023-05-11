@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyProfile';
+  items = Array.from({length: 100000}).map((_, i) => `Item #${i}`);
 }
