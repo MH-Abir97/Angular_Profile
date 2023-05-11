@@ -42,3 +42,23 @@
     text-align: justify;
 }
 
+.aboutMainContent2 {
+    width: 100%;
+}
+.aboutMainContent2 .aboutMainContent-child1{
+    float: left;
+    width: 33%;
+}
+.aboutMainContent2 .aboutMainContent-child2{
+    float: left;
+    width: 33%;
+    list-style-type:none;
+}
+.aboutMainContent2 .aboutMainContent-child3{
+    float: left;
+    width: 33%;
+    
+}
+ ul li{
+    list-style-type:none;
+}
