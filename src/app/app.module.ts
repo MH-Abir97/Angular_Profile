@@ -16,11 +16,17 @@ import {MatIconModule} from '@angular/material/icon';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { AboutComponent } from './about/about.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
+import { HomeComponent } from './home/home.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatRadioModule} from '@angular/material/radio';
+import { ResumeComponent } from './resume/resume.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    AboutComponent
+    AboutComponent,
+    HomeComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,9 @@ import {NgxTypedJsModule} from 'ngx-typed-js';
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    ScrollingModule
+    ScrollingModule,
+    MatProgressBarModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
