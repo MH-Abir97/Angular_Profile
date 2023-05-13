@@ -20,7 +20,7 @@
   width: 0.2%;
   float: left;
   text-align: justify;
-  height: 1100px;
+  height: 1050px;
   background-color: #149ddd;
   margin-top: 35px;
 }
@@ -29,7 +29,7 @@
   width: 0.2%;
   float: left;
   text-align: justify;
-  height: 1100px;
+  height: 1080px;
   background-color: #149ddd;
   margin-top: 35px;
 }
@@ -68,4 +68,39 @@
   text-align: justify;
   height: 276px;
   background-color: #149ddd;
+}
+
+.resumeArea-Child2 p{
+  font-size: 16px;
+  text-align: justify;
+}
+
+.resumeArea-Child2 ul li{
+  font-size: 14px;
+  text-align: justify;
+  font-weight: bold;
+}
+.resumeArea-Child3 ul li{
+  font-size: 14px;
+  text-align: justify;
+  font-weight: bold;
+}
+.resumeArea-Child4 ul li{
+  font-size: 14px;
+  text-align: justify;
+  font-weight: bold;
+}
+
+
+
+.resumeArea-Child4 p{
+  font-size: 16px;
+  text-align: justify;
+  font-weight: bold;
+ 
+}
+
+.resumeArea-Child4 ol li{
+  font-size: 14px;
+  text-align: justify;
 }

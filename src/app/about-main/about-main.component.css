@@ -62,7 +62,7 @@
   .aboutMainContent2 .aboutMainContent-child2 ul li{
     list-style-type:none;
     padding-top: 10px;
-    font-size: 18px;
+    font-size: 15px;
   }
   .aboutMainContent2 .aboutMainContent-child3{
       float: left;
@@ -72,7 +72,7 @@
   .aboutMainContent2 .aboutMainContent-child3 ul li{
     list-style-type:none;
     padding-top: 10px;
-    font-size: 18px;
+    font-size: 15px;
   }
    ul li{
       list-style-type:none;
@@ -80,8 +80,8 @@
   
   .aboutMainContent-child-Image
   {
-    height: 400px;
-    width: 100%;
+    height: 350px;
+    width: 95%;
     box-shadow: 5px 5px 5px 5px white ;
   }
   
