@@ -20,13 +20,25 @@ import { HomeComponent } from './home/home.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatRadioModule} from '@angular/material/radio';
 import { ResumeComponent } from './resume/resume.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContractComponent } from './contract/contract.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import { AboutMainComponent } from './about-main/about-main.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     AboutComponent,
     HomeComponent,
-    ResumeComponent
+    ResumeComponent,
+    PortfolioComponent,
+    ContractComponent,
+    HeaderComponent,
+    AboutMainComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -42,7 +54,10 @@ import { ResumeComponent } from './resume/resume.component';
     MatIconModule,
     ScrollingModule,
     MatProgressBarModule,
-    MatRadioModule
+    MatRadioModule,
+    MatInputModule,
+    MatButtonModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

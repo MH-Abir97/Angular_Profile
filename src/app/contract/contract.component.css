@@ -1,0 +1,60 @@
+
+.contractArea{
+    width: 100%;
+
+}
+.contractArea-child1{
+ float: left;
+ width: 48%;
+ padding: 1%;
+}
+
+.contractArea-child2{
+    float: left;
+    width: 48%;
+    padding: 1%;
+}
+
+.socialLink{
+    margin-left: auto;
+}
+.socialLink a{
+   
+    font-size: 18px;
+    display: inline-block;
+    background: #dff3fc;
+    color: #149ddd;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 18px;
+    transition: 0.3s;
+   
+}
+
+.socialLink a:hover{
+   
+    font-size: 18px;
+    display: inline-block;
+    background: #149ddd;
+    color: white;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 18px;
+    transition: 0.3s;
+   
+}
+.mat-mdc-form-field-infix {
+    flex: auto;
+    min-width: 0;
+    width: 300px !important;
+    position: relative;
+    box-sizing: border-box;
+}

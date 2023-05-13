@@ -1,0 +1,36 @@
+
+.portfolioArea{
+    width:100%;
+  
+}
+
+.portfolioImage{
+    width: 100%;
+    height: 380px;
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    box-shadow: 0 0 2px 1px #149ddd;
+}
+.portfolioArea-child1{
+    float:left;
+    width: 48%;
+    padding: 1%;
+   
+}
+.portfolioArea-child2{
+    float:left;
+    width: 48%;
+    padding: 1%;
+    
+}
+.portfolioArea-child3{
+    float:left;
+    width: 32%;
+    padding: 1%;
+}
+.portfolioArea-child4{
+    float:left;
+    width: 24%;
+    padding: 1%;
+}

@@ -31,17 +31,24 @@
      <div class="navBarManue">
       <ul>
        <li>
-        <a> <i class="fa fa-home"></i> Home</a>
+        <a  routerLink="/"> <i class="fa fa-home" ></i> Home</a>
        </li>
        <li>
-        <a><i class="fa fa-user"></i> About</a>
+        <a  routerLink="/about" ><i class="fa fa-user" ></i> About</a>
        </li>
        <li>
-        <a><i class="fa fa-print"></i> Resume</a>
+        <a routerLink="/resume"><i class="fa fa-print"></i> Resume</a>
        </li>
        <li>
-        <a><i class="fa fa-book"></i> Portfolio</a>
+        <a routerLink="/portfolio"><i class="fa fa-book"></i> Portfolio</a>
        </li>
+       <li>
+        <a routerLink="/contract"><i class="fa fa-book"></i> Contract</a>
+       </li>
+       
+       <!-- <li>
+        <a href="../app/contract/contract.component.html"><i class="fa fa-book"></i> Contract</a>
+       </li> -->
       </ul>
      </div>
     </div>
@@ -49,14 +56,12 @@
   </mat-drawer>
   <mat-drawer-content class="mainContent" >
   <div class="mainContentInsideArea">
-    <app-home></app-home>
-    <app-about></app-about>
-    <app-resume></app-resume>
-
+     <!-- <app-header></app-header> -->
+     <router-outlet></router-outlet>
   </div>
   </mat-drawer-content>
 </mat-drawer-container>
 
 
 
-<router-outlet></router-outlet>
+
