@@ -6,15 +6,17 @@ import { ResumeComponent } from './resume/resume.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContractComponent } from './contract/contract.component';
 import { HeaderComponent } from './header/header.component';
+import { LanguageComponent } from './language/language.component';
 
 const routes: Routes = [
 
    { path: '',  component: HeaderComponent },
-   
+
    { path: 'about', component: AboutComponent },
    { path: 'resume', component: ResumeComponent },
    { path: 'portfolio', component: PortfolioComponent },
    { path: 'contract', component: ContractComponent },
+   { path: 'language', component: LanguageComponent },
 
 ];
 

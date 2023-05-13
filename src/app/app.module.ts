@@ -27,6 +27,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { AboutMainComponent } from './about-main/about-main.component';
+import { LanguageComponent } from './language/language.component';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,8 @@ import { AboutMainComponent } from './about-main/about-main.component';
     ContractComponent,
     HeaderComponent,
     AboutMainComponent,
-    
+    LanguageComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,8 @@ import { AboutMainComponent } from './about-main/about-main.component';
     MatRadioModule,
     MatInputModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

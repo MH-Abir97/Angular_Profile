@@ -113,7 +113,13 @@
   </p>
   </div>
   <div class="SkillsArea-Child2">
-    <label>HTML</label>
+    <div *ngFor="let p of languageList1">
+      <label>{{p.LanguageName}}</label>
+      <p>
+        <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>
+      </p>
+    </div>
+    <!-- <label>HTML</label>
     <p>
       <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
     </p>
@@ -128,7 +134,7 @@
     <label>Angular</label>
     <p>
       <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-    </p>
+    </p> -->
 
   </div>
 

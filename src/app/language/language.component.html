@@ -1,0 +1,42 @@
+
+<mat-card>
+  <br>
+  <form [formGroup]="languageEntry">
+  <table style="width: 100%;">
+    <tr>
+      <td style="width: 30%;padding: 15px;">
+          <mat-form-field appearance="outline" style="width: 100% !important">
+            <mat-label>Language</mat-label>
+            <input matInput formControlName="LanguageName" placeholder="Language">
+          </mat-form-field>
+      </td>
+      <td style="width: 30%;padding: 15px;">
+          <mat-form-field appearance="outline" style="width: 100% !important">
+            <mat-label>Language (%)</mat-label>
+            <input matInput formControlName="LanguagePercent" placeholder="Language (%)">
+          </mat-form-field>
+      </td>
+      <td style="width: 20%;">
+        <button mat-button (click)="onSave()" color="primary" style="background: #149ddd;color: white;">{{saveBtn}}</button>
+    </td>
+    </tr>
+  </table>
+</form>
+
+<table  class="mat-elevation-z8" style="text-align: center;">
+<tr>
+  <th>SL No</th>
+  <th>Language</th>
+  <th>Percent</th>
+  <th>Action</th>
+</tr>
+ <tr *ngFor="let l of languageList | async;let i=index">
+  <td>{{i+1}}</td>
+  <td>{{l.LanguageName}}</td>
+  <td>{{l.LanguagePercent}}</td>
+  <td>
+    <button mat-button (click)="Edit(l)" color="primary" style="background: #149ddd;color: white;">Edit</button>
+  </td>
+ </tr>
+</table>
+</mat-card>
