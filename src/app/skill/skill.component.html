@@ -16,15 +16,22 @@
               <input matInput formControlName="ModuleName" placeholder="Module Name">
             </mat-form-field>
         </td>
+        <td style="width: 20%;padding: 15px;">
+            <mat-form-field appearance="outline" style="width: 100% !important">
+              <mat-label>Sort</mat-label>
+              <input matInput formControlName="Sort" placeholder="Sort">
+            </mat-form-field>
+        </td>
+        
       </tr>
     </table>
  
     <table  style="width: 100%;">
       <tr>
-        <!-- <td style="width: 20%;padding-left: 15px;">
+        <td style="width: 20%;padding-left: 15px;">
           <button mat-button (click)="onSave()" color="primary" style="background: #149ddd;color: white;width: 10%;">{{saveBtn}}</button>
           <button mat-button (click)="ResetBtn()" color="primary" style="background: #dd1919;color: white;margin:10px;">Clear</button>
-        </td> -->
+        </td>
       </tr>
     </table>
   </form>
@@ -35,29 +42,22 @@
     <br>
   <tr>
     <th>SL No</th>
-    <th>Education</th>
-    <th>Session</th>
-    <th>Institution Name</th>
-    <th>Subject</th>
-    <th>Location</th>
+    <th>Project</th>
+    <th>Module Name</th>
     <th>Sort</th>
- 
     <th>Action</th>
-  <!-- </tr>
-    <tr *ngFor="let l of qualificationList | async;let i=index">
+  </tr>
+    <tr *ngFor="let l of SkillsList | async;let i=index">
     <td>{{i+1}}</td>
-    <td>{{l.EducationBackground}}</td>
-    <td>{{l.Session}}</td>
-    <td>{{l.institutionName}}</td>
-    <td>{{l.Subject}}</td>
-    <td>{{l.InstLocation}}</td>
+    <td>{{l.Project}}</td>
+    <td>{{l.ModuleName}}</td>
     <td>{{l.Sort}}</td>
- 
+   
     <td>
       <button mat-button (click)="Edit(l)" color="primary" style="background: #149ddd;color: white;">Edit</button>
-     
+      <button mat-button (click)="Delete(l)" color="primary" style="background: #dd1919;color: white;margin: 10px;">Delete</button>
     </td>
-   </tr> -->
+   </tr>
   </table>
   <br>
   <br>
