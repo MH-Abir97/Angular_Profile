@@ -12,6 +12,7 @@ export class ResumeComponent {
 
   UserDataList:any=[];
   qualificationList:any=[];
+  SkillsList:any=[];
   constructor(private _fireStore:Firestore) {
 
   }
@@ -19,6 +20,7 @@ export class ResumeComponent {
   ngOnInit():void {
     this.GetAllAbout();
     this.GetAll();
+    this.GetAllSkills();
    
   }
   GetAllAbout(){
@@ -42,5 +44,14 @@ export class ResumeComponent {
     this.qualificationList=collectionData(collectionInstance,{idField:'id'});
     
   }
+
+  GetAllSkills(){
+    const instance=collection(this._fireStore,'Skills');
+    collectionData(instance,{idField:'id'}).subscribe((data)=>{
+
+    })
+    this.SkillsList= collectionData(instance,{idField:'id'});
+ }
+
 
 }
