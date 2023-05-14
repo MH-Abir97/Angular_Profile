@@ -13,6 +13,9 @@ export class ResumeComponent {
   UserDataList:any=[];
   qualificationList:any=[];
   SkillsList:any=[];
+  frontEndSkillList:any=[];
+  backEndSkillList=[];
+  sqlSkillList=[];
   constructor(private _fireStore:Firestore) {
 
   }
@@ -47,8 +50,12 @@ export class ResumeComponent {
 
   GetAllSkills(){
     const instance=collection(this._fireStore,'Skills');
-    collectionData(instance,{idField:'id'}).subscribe((data)=>{
-
+    collectionData(instance,{idField:'id'}).subscribe((data:any)=>{
+      this.frontEndSkillList=data.filter((aData:any)=>aData.Project=="Front-End");
+    //  this.backEndSkillList=[];
+      //this.sqlSkillList=[];
+      
+      this.SkillsList=data.filter((aData:any)=>aData.Project=="ERP System");
     })
     this.SkillsList= collectionData(instance,{idField:'id'});
  }
