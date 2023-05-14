@@ -14,8 +14,12 @@ export class ResumeComponent {
   qualificationList:any=[];
   SkillsList:any=[];
   frontEndSkillList:any=[];
-  backEndSkillList=[];
-  sqlSkillList=[];
+  backEndSkillList:any=[];
+  OthersSkillList:any=[];
+  sqlSkillList:any=[];
+  problemSolveSkill:any=[];
+  reportSkill:any=[];
+
   constructor(private _fireStore:Firestore) {
 
   }
@@ -24,7 +28,7 @@ export class ResumeComponent {
     this.GetAllAbout();
     this.GetAll();
     this.GetAllSkills();
-   
+
   }
   GetAllAbout(){
     debugger;
@@ -45,17 +49,23 @@ export class ResumeComponent {
 
     });
     this.qualificationList=collectionData(collectionInstance,{idField:'id'});
-    
+
   }
 
   GetAllSkills(){
+    debugger;
     const instance=collection(this._fireStore,'Skills');
     collectionData(instance,{idField:'id'}).subscribe((data:any)=>{
-      this.frontEndSkillList=data.filter((aData:any)=>aData.Project=="Front-End");
+      this.frontEndSkillList=data.filter((aData:any)=>aData.Project.match(/Front-End/gi));
     //  this.backEndSkillList=[];
       //this.sqlSkillList=[];
-      
+      this.problemSolveSkill=data.filter((aData:any)=>aData.Project.match(/Problem Solve/gi));
       this.SkillsList=data.filter((aData:any)=>aData.Project=="ERP System");
+
+      this.OthersSkillList=data.filter((aData:any)=>aData.Project.match(/Others/gi));
+      this.backEndSkillList=data.filter((aData:any)=>aData.Project.match(/C# AND ASP.NET/gi));
+      this.sqlSkillList=data.filter((aData:any)=>aData.Project.match(/Microsoft SQL Server/gi));
+      this.reportSkill=data.filter((aData:any)=>aData.Project.match(/Html and RDLC Reporting/gi));
     })
     this.SkillsList= collectionData(instance,{idField:'id'});
  }

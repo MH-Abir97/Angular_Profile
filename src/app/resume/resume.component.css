@@ -14,7 +14,7 @@
   text-align: justify;
   height: auto;
   padding: 1%;
-  
+
 }
 
 .resumeArea-Child1{
@@ -80,7 +80,7 @@
   font-size: 14px;
   text-align: justify;
   font-weight: bold;
-  
+
 }
 .QualificationDiv p{
   font-style: italic;
@@ -92,9 +92,12 @@
   font-weight: bold;
 }
 .resumeArea-Child4 ul li{
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;
-  font-weight: bold;
+  font-weight: 100;
+  line-height: 5px;
+  font-style: italic;
+
 }
 
 
@@ -103,7 +106,7 @@
   font-size: 16px;
   text-align: justify;
   font-weight: bold;
- 
+
 }
 
 .resumeArea-Child4 ol li{

@@ -4,14 +4,14 @@
   <div style="height: 4px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
 
    <div  class="resumeArea-Child1" >
-   
+
    </div>
 
   <div class="resumeArea-Child2">
   <h2>MH Anwar Hossain Abir</h2>
   <p  *ngIf="UserDataList.length>0">{{UserDataList[0].DescriptionThree}}</p>
   <ul>
-    
+
     <li *ngIf="UserDataList.length>0">{{UserDataList[0].Address}}</li>
     <li *ngIf="UserDataList.length>0">{{UserDataList[0].Phone}}</li>
     <li *ngIf="UserDataList.length>0">{{UserDataList[0].Email}}</li>
@@ -25,82 +25,67 @@
     <p>{{q.InstLocation}}</p>
 
   </div>
-  
+
 
   </div>
 
   <div class="resumeArea-Child3">
 
   </div>
- 
+
   <div class="resumeArea-Child4">
     <h2>Professional Experience</h2>
-    <h2>Associate Software Engineer</h2>
-    <p>I am full stack developer Asp.net with Dot.Net core and C#,I am professional working experience like 
-      that.</p>
+    <h2>{{UserDataList[0].Designation}}</h2>
+     <p  style="font-weight: 100 !important;text-align: justify !important;" *ngIf="UserDataList.length>0">{{UserDataList[0].DescriptionTwo}}</p>
       <p *ngIf="SkillsList.length>0">
         {{SkillsList[0].Project}} :
       </p>
       <ul *ngFor="let f of SkillsList">
         <li> {{f.ModuleName}}</li>
        </ul>
-    <p>Others :</p>
-    <ol>
-      <li>Automation Inventory</li>
-      <li>Power up (Battery Management System) USA Based</li>
-     </ol>
-     <P>Sundarban Courier Service ERP :</P>
-     <ol>
-      <li> Automation Inventory</li>
-     </ol>
-    <h2>SKILLS : </h2>
-    <P> Reporting System : </P>
-    <ol>
-      <li> Html and RDLC Reporting</li>
-     </ol>
-     <p>Problem Solve:</p>
-     <ol>
-      <li>URI Judge</li>
-      <li>Hacker Rank</li>
-     </ol>
+    <p *ngIf="OthersSkillList.length >0"> {{OthersSkillList[0].Project}} :</p>
+    <ul *ngFor="let o of OthersSkillList">
+      <li>{{o.ModuleName}}</li>
+     </ul>
+
+     <p *ngIf="problemSolveSkill.length>0"> {{problemSolveSkill[0].Project}} :</p>
+     <ul *ngFor="let p of problemSolveSkill">
+       <li>{{p.ModuleName}}</li>
+    </ul>
       <p *ngIf="frontEndSkillList.length>0">
         {{frontEndSkillList[0].Project}} :
       </p>
       <ul *ngFor="let f of frontEndSkillList">
         <li> {{f.ModuleName}}</li>
        </ul>
-       <p>
-        C# AND ASP.NET :
-       </p>
-       <ol>
-        <li>ASP.NET & .NET Core</li>
-         <li> Authentication asp.net Core</li>
-         <li>JSON Web Token (JWT) in Asp.Net Core </li>
-         <li>.NET & Asp.Net Core SignalR</li>
-         <li>.NET & Asp.Net Core Razor </li>
-         <li>.NET & Asp.Net Core Web API</li>
-        </ol>
-        <p>
-          Microsoft SQL Server :
-         </p>
-         <ol>
-           <li>Sql Query</li>
-           <li> Sql View</li>
-           <li> Store Procudure </li>
-           <li> Sql function </li>
-           <li>Sql Pvot </li>
-          
-          </ol>
+       <p *ngIf="backEndSkillList.length>0">
+        {{backEndSkillList[0].Project}} :
+      </p>
+      <ul *ngFor="let f of backEndSkillList">
+        <li> {{f.ModuleName}}</li>
+       </ul>
+       <p *ngIf="sqlSkillList.length>0">
+        {{sqlSkillList[0].Project}} :
+      </p>
+      <ul *ngFor="let f of sqlSkillList">
+        <li> {{f.ModuleName}}</li>
+       </ul>
+       <p *ngIf="reportSkill.length>0">
+        {{reportSkill[0].Project}} :
+      </p>
+      <ul *ngFor="let f of reportSkill">
+        <li> {{f.ModuleName}}</li>
+       </ul>
   </div>
 
 
 </div>
 <br>
-<!-- 
+<!--
 <div class="resumeArea1">
   <h1>Education</h1>
    <div class="resumeArea-Child11" >
-   
+
    </div>
 
   <div class="resumeArea-Child22">
@@ -133,4 +118,4 @@
 
 
 </div> -->
-   
+

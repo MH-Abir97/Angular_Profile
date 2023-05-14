@@ -27,9 +27,9 @@
           <mat-label>Grade </mat-label>
           <input matInput formControlName="Grade" placeholder="Grade">
         </mat-form-field>
-       
+
     </td>
-      
+
       </tr>
     </table>
     <table style="width: 100%;">
@@ -57,9 +57,9 @@
             <mat-label>Address </mat-label>
             <input matInput formControlName="Address" placeholder="Address">
           </mat-form-field>
-         
+
       </td>
-        
+
         </tr>
       </table>
 
@@ -88,14 +88,14 @@
             <mat-label>HardWork </mat-label>
             <input matInput formControlName="HardWork" placeholder="HardWork">
           </mat-form-field>
-         
+
       </td>
-        
+
         </tr>
       </table>
       <table style="width: 100%;">
         <tr>
-         
+
           <td style="width: 25%;padding: 15px;">
             <mat-form-field appearance="outline" style="width: 100% !important">
               <mat-label>Email</mat-label>
@@ -107,9 +107,16 @@
             <mat-label>Location </mat-label>
             <input matInput formControlName="Location" placeholder="Location">
           </mat-form-field>
-         
+
       </td>
-        
+      <td style="width: 25%;">
+        <mat-form-field appearance="outline" style="width: 100% !important">
+          <mat-label>Designation </mat-label>
+          <input matInput formControlName="Designation" placeholder="Designation">
+        </mat-form-field>
+
+    </td>
+
         </tr>
       </table>
     <table  style="width: 100%;">
@@ -151,10 +158,10 @@
       </tr>
     </table>
   </form>
-  
-  
+
+
   <table   style="text-align: center;" >
-    
+
     <br>
   <tr>
     <th>SL No</th>
@@ -180,11 +187,11 @@
     <td>{{l.Address}}</td>
     <td>
       <button mat-button (click)="Edit(l)" color="primary" style="background: #149ddd;color: white;">Edit</button>
-     
+
     </td>
    </tr>
   </table>
   <br>
   <br>
   </mat-card>
-  
+
