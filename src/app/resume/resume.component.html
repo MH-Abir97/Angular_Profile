@@ -3,28 +3,30 @@
   <h1>Resume</h1>
   <div style="height: 4px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
 
-   <div class="resumeArea-Child1" >
+   <div  class="resumeArea-Child1" >
    
    </div>
 
   <div class="resumeArea-Child2">
   <h2>MH Anwar Hossain Abir</h2>
-  <p>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</p>
+  <p  *ngIf="UserDataList.length>0">{{UserDataList[0].DescriptionThree}}</p>
   <ul>
-    <li>Portland par 127,Orlando, FL</li>
-    <li>Portland par 127,Orlando, FL</li>
-    <li>Portland par 127,Orlando, FL</li>
-  </ul>
-  <h2>BSC in CSE</h2>
-  <p>2015 - 2016</p>
-   <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-   <h2>HSC</h2>
-   <p>2012 - 2014</p>
-   <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+    
+    <li *ngIf="UserDataList.length>0">{{UserDataList[0].Address}}</li>
+    <li *ngIf="UserDataList.length>0">{{UserDataList[0].Phone}}</li>
+    <li *ngIf="UserDataList.length>0">{{UserDataList[0].Email}}</li>
 
-   <h2>SSC</h2>
-   <p>2011 - 2012</p>
-   <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+  </ul>
+  <div class="QualificationDiv" *ngFor="let q of qualificationList   ;let i=index; ">
+    <h2>{{q.EducationBackground }}</h2>
+    <p>{{q.Subject}}</p>
+    <p>{{q.Session }}</p>
+    <p>{{q.institutionName}}</p>
+    <p>{{q.InstLocation}}</p>
+
+  </div>
+  
+
   </div>
 
   <div class="resumeArea-Child3">
@@ -103,7 +105,7 @@
 
 
 </div>
-
+<br>
 <!-- 
 <div class="resumeArea1">
   <h1>Education</h1>

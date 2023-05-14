@@ -5,7 +5,7 @@
     <h1>About</h1>
     <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nibh id risus cursus varius. Pellentesque tempor placerat massa, viverra scelerisque libero ullamcorper vitae.
+      <span *ngIf="UserDataList.length>0"> {{UserDataList[0].DescriptionTwo}}</span>
     </p>
 
 </div>
@@ -15,7 +15,9 @@
   </div>
   <div class="commontext">
     <h1 >ASP.NET And Angular developer </h1>
-    <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <p >
+      <span *ngIf="UserDataList.length>0"> {{UserDataList[0].DescriptionOne}}</span>
+    </p>
   </div>
 
   <div class="aboutMainsubContent">
@@ -23,16 +25,16 @@
     <div class="aboutMainContent-child2">
       <ul>
           <li>
-              <i class="fa fa-chevron-right"></i><strong>Degree : </strong>
+              <i class="fa fa-chevron-right"></i><strong >Degree :</strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].Degree}}</span>
           </li>
           <li>
-              <i class="fa fa-chevron-right"></i><strong>Session : </strong>
+              <i class="fa fa-chevron-right"></i><strong>Session : </strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].Session}}</span>
           </li>
           <li>
-              <i class="fa fa-chevron-right"></i><strong>University :</strong>
+              <i class="fa fa-chevron-right"></i><strong>University :</strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].University}}</span>
           </li>
           <li>
-              <i class="fa fa-chevron-right"></i><strong>Grade : </strong>
+              <i class="fa fa-chevron-right"></i><strong>Grade : </strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].Grade}}</span>
           </li>
 
       </ul>
@@ -41,16 +43,16 @@
     <div class="aboutMainContent-child3">
       <ul>
           <li>
-              <i class="fa fa-chevron-right"> </i> <strong>Date of Birth : </strong>
+              <i class="fa fa-chevron-right"> </i> <strong>Date of Birth : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].DateOfBirth}}</span>
           </li>
           <li>
-              <i class="fa fa-chevron-right"></i> <strong>Website : </strong>
+              <i class="fa fa-chevron-right"></i> <strong>Website : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].Website}}</span>
           </li>
           <li>
-              <i class="fa fa-chevron-right"></i> <strong>Phone : </strong>
+              <i class="fa fa-chevron-right"></i> <strong>Phone : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].Phone}}</span>
           </li>
           <li>
-              <i class="fa fa-chevron-right"></i> <strong>Address : </strong>
+              <i class="fa fa-chevron-right"></i> <strong>Address : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].Address}}</span>
           </li>
 
       </ul>
@@ -69,51 +71,43 @@
   </p>
   <div class="aboutMainContent3">
   <div class="aboutMainContent3-child1">
-   <h1 ><i class="fa fa-smile-o" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> 232</h1>
-   <p>Happy Clients consequuntur quae</p>
+   <h1 *ngIf="UserDataList.length>0" style="font-size:56px !important;"><i class="fa fa-smile-o" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> {{UserDataList[0].HappyClient}}</h1>
+   <p>Happy Clients</p>
   </div>
   <div class="aboutMainContent3-child2">
-    <h1><i class="fa fa-address-book-o" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> 232</h1>
-    <p>Happy Clients consequuntur quae</p>
+    <h1 *ngIf="UserDataList.length>0" style="font-size:56px !important;"><i class="fa fa-address-book-o" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> {{UserDataList[0].Project}}</h1>
+    <p>Projects</p>
   </div>
   <div class="aboutMainContent3-child2">
-    <h1><i class="fa fa-headphones" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i>    232</h1>
-    <p>Happy Clients consequuntur quae</p>
+    <h1 *ngIf="UserDataList.length>0" style="font-size:56px !important;"><i class="fa fa-headphones" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> {{UserDataList[0].HofSupport}}</h1>
+    <p>Hours Of Support</p>
   </div>
   <div class="aboutMainContent3-child4">
-    <h1><i class="fa fa-user" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> 232</h1>
-    <p>Happy Clients consequuntur quae</p>
+    <h1 *ngIf="UserDataList.length>0" style="font-size:56px !important;"><i class="fa fa-user" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> {{UserDataList[0].HardWork}}</h1>
+    <p>Hardwork</p>
   </div>
   </div>
 
 </div>
 <br>
+<br>
 <div class="SkillsArea">
   <h1>Skills</h1>
   <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
-  <p>
-    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+  <p style="font-size: 16px;text-align:justify" *ngIf="languageList1.length>0">
+   {{languageList1[0].Description}}
   </p>
   <div class="SkillsArea-Child1">
-  <label>C</label>
-  <p>
-    <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-  </p>
-  <label>C++</label>
-  <p>
-    <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-  </p>
-  <label>C#</label>
-  <p>
-    <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
-  </p>
-  <label>ASP.NET</label>
-  <p>
-    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-  </p>
+    <div *ngFor="let p of languageList1">
+      <label>{{p.LanguageName}}</label>
+      <p>
+        <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>
+      </p>
+    </div>
+  
   </div>
   <div class="SkillsArea-Child2">
-    <div *ngFor="let p of languageList1">
+    <div *ngFor="let p of languageList2">
       <label>{{p.LanguageName}}</label>
       <p>
         <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>

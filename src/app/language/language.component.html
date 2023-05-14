@@ -4,39 +4,80 @@
   <form [formGroup]="languageEntry">
   <table style="width: 100%;">
     <tr>
-      <td style="width: 30%;padding: 15px;">
+      <td style="width: 25%;padding: 15px;">
           <mat-form-field appearance="outline" style="width: 100% !important">
             <mat-label>Language</mat-label>
             <input matInput formControlName="LanguageName" placeholder="Language">
           </mat-form-field>
       </td>
-      <td style="width: 30%;padding: 15px;">
+      <td style="width: 25%;padding: 15px;">
           <mat-form-field appearance="outline" style="width: 100% !important">
             <mat-label>Language (%)</mat-label>
             <input matInput formControlName="LanguagePercent" placeholder="Language (%)">
           </mat-form-field>
       </td>
-      <td style="width: 20%;">
-        <button mat-button (click)="onSave()" color="primary" style="background: #149ddd;color: white;">{{saveBtn}}</button>
+      <td style="width: 25%;padding: 15px;">
+        <mat-form-field appearance="outline" style="width: 100% !important">
+          <mat-label>Sort</mat-label>
+          <input matInput formControlName="Sort" placeholder="Sort">
+        </mat-form-field>
     </td>
+    <td style="width: 25%;">
+      <mat-form-field appearance="outline" style="width: 100% !important">
+        <mat-label>Language </mat-label>
+        <mat-select formControlName="LanguageType">
+          <mat-option value=""> --Select--</mat-option>
+          <mat-option value="Frontend"> Frontend</mat-option>
+          <mat-option value="Backend"> Backend</mat-option>
+          <mat-option value="Backend"> Discription</mat-option>
+        </mat-select>
+      </mat-form-field>
+     
+  </td>
+    
+    </tr>
+  </table>
+  <table  style="width: 100%;">
+    <tr>
+      <td style="width: 20%;padding-left: 15px;">
+        <mat-form-field appearance="outline" style="width: 100% !important">
+          <mat-label>Description</mat-label>
+          <textarea matInput formControlName="Description"></textarea>
+        </mat-form-field>
+      </td>
+    </tr>
+  </table>
+  <table  style="width: 100%;">
+    <tr>
+      <td style="width: 20%;padding-left: 15px;">
+        <button mat-button (click)="onSave()" color="primary" style="background: #149ddd;color: white;width: 10%;">{{saveBtn}}</button>
+      </td>
     </tr>
   </table>
 </form>
 
-<table  class="mat-elevation-z8" style="text-align: center;">
+
+<table   style="text-align: center;" >
+  
+  <br>
 <tr>
   <th>SL No</th>
   <th>Language</th>
   <th>Percent</th>
+  <th>Sort</th>
+  <th>Type</th>
   <th>Action</th>
 </tr>
  <tr *ngFor="let l of languageList | async;let i=index">
   <td>{{i+1}}</td>
   <td>{{l.LanguageName}}</td>
   <td>{{l.LanguagePercent}}</td>
+  <td>{{l.Sort}}</td>
+  <td>{{l.LanguageType}}</td>
   <td>
     <button mat-button (click)="Edit(l)" color="primary" style="background: #149ddd;color: white;">Edit</button>
   </td>
  </tr>
 </table>
+<br>
 </mat-card>

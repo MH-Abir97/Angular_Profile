@@ -7,6 +7,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContractComponent } from './contract/contract.component';
 import { HeaderComponent } from './header/header.component';
 import { LanguageComponent } from './language/language.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { QualificationComponent } from './qualification/qualification.component';
+import { SkillComponent } from './skill/skill.component';
 
 const routes: Routes = [
 
@@ -17,6 +20,9 @@ const routes: Routes = [
    { path: 'portfolio', component: PortfolioComponent },
    { path: 'contract', component: ContractComponent },
    { path: 'language', component: LanguageComponent },
+   { path: 'user', component: UserDetailsComponent },
+   { path: 'education', component: QualificationComponent },
+   { path: 'skill', component: SkillComponent },
 
 ];
 

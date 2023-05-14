@@ -29,6 +29,11 @@ import { HeaderComponent } from './header/header.component';
 import { AboutMainComponent } from './about-main/about-main.component';
 import { LanguageComponent } from './language/language.component';
 import {MatTableModule} from '@angular/material/table';
+import {MatSelectModule} from '@angular/material/select';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { QualificationComponent } from './qualification/qualification.component';
+import { SkillComponent } from './skill/skill.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +46,10 @@ import {MatTableModule} from '@angular/material/table';
     HeaderComponent,
     AboutMainComponent,
     LanguageComponent,
+    UserDetailsComponent,
+    QualificationComponent,
+    SkillComponent,
+
 
   ],
   imports: [
@@ -61,7 +70,9 @@ import {MatTableModule} from '@angular/material/table';
     MatInputModule,
     MatButtonModule,
     RouterModule,
-    MatTableModule
+    MatTableModule,
+    MatSelectModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,169 +1,177 @@
 
 .aboutMainContent .aboutImage{
-    height: 400px;
-    width: 100%;
-    margin-top:0px;
-    /* background-image: url("../assets/BannerCodingImg.jpg"); */
-  }
-  
-  .headingText1 {
-      margin-top:-260px;
-      color: white;
-      margin-left: 30%;
-      font-size: 46px;
-      font-weight: bold;
-  
-  }
-  .headingText2 {
-      margin-top:-10px;
-      color: white;
-      margin-left: 26%;
-      font-size: 46px;
-      font-weight: bold;
-  
-  }
-  
-  .headingText3{
-      margin-top:-10px;
-      color: white;
-      margin-left: 46%;
-      font-size: 46px;
-      font-weight: bold;
-  }
-  .headingText2{
-      margin-top:-30px;
-      color: white;
-      margin-left: 30%;
-      font-size: 28px;
-      font-weight: bold;
-  }
-  
-  .aboutMainContent1 p{
-      text-align: justify;
-  }
-  
-  .aboutMainContent2 {
-      width: 100%;
-  
-  }
-  .aboutMainContent2 p{
-    margin-right: 20px;
-  }
-  .aboutMainContent2 .aboutMainContent-child1{
-      float: left;
-      width: 33%;
-  }
-  .aboutMainContent2 .aboutMainContent-child2{
-      float: left;
-      width: 33%;
-      list-style-type:none;
-  
-  }
-  .aboutMainContent2 .aboutMainContent-child2 ul li{
-    list-style-type:none;
-    padding-top: 10px;
-    font-size: 15px;
-  }
-  .aboutMainContent2 .aboutMainContent-child3{
-      float: left;
-      width: 33%;
-  
-  }
-  .aboutMainContent2 .aboutMainContent-child3 ul li{
-    list-style-type:none;
-    padding-top: 10px;
-    font-size: 15px;
-  }
-   ul li{
-      list-style-type:none;
-  }
-  
-  .aboutMainContent-child-Image
-  {
-    height: 350px;
-    width: 95%;
-    box-shadow: 5px 5px 5px 5px white ;
-  }
-  
-  .commontext{
-    margin-left: 36%;
+  height: 400px;
+  width: 100%;
+  margin-top:0px;
+  /* background-image: url("../assets/BannerCodingImg.jpg"); */
+}
+
+.headingText1 {
+    margin-top:-260px;
+    color: white;
+    margin-left: 30%;
+    font-size: 46px;
+    font-weight: bold;
+
+}
+.headingText2 {
+    margin-top:-10px;
+    color: white;
+    margin-left: 26%;
+    font-size: 46px;
+    font-weight: bold;
+
+}
+
+.headingText3{
+    margin-top:-10px;
+    color: white;
+    margin-left: 46%;
+    font-size: 46px;
+    font-weight: bold;
+}
+.headingText2{
+    margin-top:-30px;
+    color: white;
+    margin-left: 30%;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.aboutMainContent1 p{
     text-align: justify;
-  }
-  .commontext h1{
-    text-transform: uppercase;
-  }
-  
-  .aboutMainContent3{
-    height: 150px;
-  }
-  
-  .aboutMainContent3 .aboutMainContent3-child1{
-   float: left;
-   width: 22%;
-   margin-left: 3%;
-  
-  }
-  .aboutMainContent3 .aboutMainContent3-child1 p{
-   margin: 0px 55px;
-   font-weight: bold;
-   }
-  .aboutMainContent3 .aboutMainContent3-child2{
+}
+
+.aboutMainContent2 {
+    width: 100%;
+
+}
+.aboutMainContent2 p{
+  margin-right: 20px;
+}
+.aboutMainContent2 .aboutMainContent-child1{
     float: left;
-    width: 22%;
-  
-   margin-left: 3%;
-  }
-  .aboutMainContent3 .aboutMainContent3-child2 p{
-    margin: 0px 55px;
-    font-weight: bold;
-  }
-  .aboutMainContent3 .aboutMainContent3-child3{
+    width: 33%;
+}
+.aboutMainContent2 .aboutMainContent-child2{
     float: left;
-    width: 22%;
-  
-   margin-left: 3%;
-  }
-  .aboutMainContent3 .aboutMainContent3-child3 p{
-    margin: 0px 55px;
-    font-weight: bold;
-  }
-  .aboutMainContent3 .aboutMainContent3-child4{
+    width: 33%;
+    list-style-type:none;
+
+}
+.aboutMainContent2 .aboutMainContent-child2 ul li{
+  list-style-type:none;
+  padding-top: 10px;
+  font-size: 15px;
+}
+.aboutMainContent2 .aboutMainContent-child3{
     float: left;
-    width: 22%;
-    margin-left: 3%;
-  }
-  .aboutMainContent3 .aboutMainContent3-child4 p{
-    margin: 0px 50px;
-    font-weight: bold;
-  }
-  .SkillsArea{
-    width: 100%
-  }
-  .SkillsArea-Child1{
-    width:48% ;
-    float: left;
-    margin-right:15px;
-    font-weight: bold;
-  }
-  .SkillsArea-Child2{
-    width:48% ;
-    float: left;
-    margin-left:15px;
-    font-weight: bold;
-  }
+    width: 33%;
+
+}
+.aboutMainContent2 .aboutMainContent-child3 ul li{
+  list-style-type:none;
+  padding-top: 10px;
+  font-size: 15px;
+}
+ ul li{
+    list-style-type:none;
+}
+
+.aboutMainContent-child-Image
+{
+  height: 350px;
+  width: 95%;
+  box-shadow: 5px 5px 5px 5px white ;
+}
+
+.commontext{
+  margin-left: 36%;
+  text-align: justify;
+}
+.commontext h1{
+  text-transform: uppercase;
+}
+.commontext p{
+  text-align: justify;
+  font-size: 16px;
+}
+
+.aboutMainContent3{
+  height: 150px;
+}
+
+.aboutMainContent3 .aboutMainContent3-child1{
+ float: left;
+ width: 22%;
+ margin-left: 3%;
+
+}
+.aboutMainContent3 .aboutMainContent3-child1 p{
+  margin: -38px 64px;
+  width: 100%;
+ font-weight: bold;
+ }
+.aboutMainContent3 .aboutMainContent3-child2{
+  float: left;
+  width: 22%;
+
+ margin-left: 3%;
+}
+.aboutMainContent3 .aboutMainContent3-child2 p{
+  margin: -38px 70px;
+  font-weight: bold;
+  width: 100%;
+}
+.aboutMainContent3 .aboutMainContent3-child3{
+  float: left;
+  width: 22%;
+
+ margin-left: 3%;
+}
+.aboutMainContent3 .aboutMainContent3-child3 p{
+  margin: -38px 64px;
+  font-weight: bold;
+  width: 100%;
+}
+.aboutMainContent3 .aboutMainContent3-child4{
+  float: left;
+  width: 22%;
+  margin-left: 3%;
+}
+.aboutMainContent3 .aboutMainContent3-child4 p{
+  margin: -38px 60px;
+  font-weight: bold;
+  width: 100%;
+}
+.SkillsArea{
+  width: 100%;
   
-  .mat-mdc-progress-bar {
-     --mdc-linear-progress-active-indicator-color: #149ddd;
-  }
-  :host ::ng-deep mat-progress-bar {
-    height: 12px;
-  }
-  
-  :host ::ng-deep mat-progress-bar .mdc-linear-progress__bar-inner {
-    border-top-width: 12px;
-  }
-  
-  
-  
-  
-  
+}
+.SkillsArea-Child1{
+  width:48% ;
+  float: left;
+  margin-right:15px;
+  font-weight: bold;
+}
+.SkillsArea-Child2{
+  width:48% ;
+  float: left;
+  margin-left:15px;
+  font-weight: bold;
+}
+
+.mat-mdc-progress-bar {
+   --mdc-linear-progress-active-indicator-color: #149ddd;
+}
+:host ::ng-deep mat-progress-bar {
+  height: 12px;
+}
+
+:host ::ng-deep mat-progress-bar .mdc-linear-progress__bar-inner {
+  border-top-width: 12px;
+}
+
+
+
+

@@ -1,136 +1,135 @@
 <section id="about">
-
-
-    <div class="aboutMainContent1" style="margin-top:450px" id="#about">
-        <h1>About</h1>
-        <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
+  <div class="aboutMainContent1" style="margin-top:450px" id="#about">
+      <h1>About</h1>
+      <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
+      <p>
+        <span *ngIf="UserDataList.length>0"> {{UserDataList[0].DescriptionTwo}}</span>
+      </p>
+  
+  </div>
+  <div class="aboutMainContent2">
+    <div class="aboutMainContent-child1">
+      <img class="aboutMainContent-child-Image" src="../assets/profile.jpg" height="100" width="100">
+    </div>
+    <div class="commontext">
+      <h1 >ASP.NET And Angular developer </h1>
+      <p >
+        <span *ngIf="UserDataList.length>0"> {{UserDataList[0].DescriptionOne}}</span>
+      </p>
+    </div>
+  
+    <div class="aboutMainsubContent">
+  
+      <div class="aboutMainContent-child2">
+        <ul>
+            <li>
+                <i class="fa fa-chevron-right"></i><strong >Degree :</strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].Degree}}</span>
+            </li>
+            <li>
+                <i class="fa fa-chevron-right"></i><strong>Session : </strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].Session}}</span>
+            </li>
+            <li>
+                <i class="fa fa-chevron-right"></i><strong>University :</strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].University}}</span>
+            </li>
+            <li>
+                <i class="fa fa-chevron-right"></i><strong>Grade : </strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].Grade}}</span>
+            </li>
+  
+        </ul>
+  
+      </div>
+      <div class="aboutMainContent-child3">
+        <ul>
+            <li>
+                <i class="fa fa-chevron-right"> </i> <strong>Date of Birth : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].DateOfBirth}}</span>
+            </li>
+            <li>
+                <i class="fa fa-chevron-right"></i> <strong>Website : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].Website}}</span>
+            </li>
+            <li>
+                <i class="fa fa-chevron-right"></i> <strong>Phone : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].Phone}}</span>
+            </li>
+            <li>
+                <i class="fa fa-chevron-right"></i> <strong>Address : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].Address}}</span>
+            </li>
+  
+        </ul>
+      </div>
+    </div>
+  
+  
+  </div>
+  
+  
+  <div style="margin-top: 320px;">
+    <h1>Facts</h1>
+    <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
+    <p style="font-size: 16px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nibh id risus cursus varius. Pellentesque tempor placerat massa, viverra scelerisque libero ullamcorper vitae.
+    </p>
+    <div class="aboutMainContent3">
+    <div class="aboutMainContent3-child1">
+     <h1 *ngIf="UserDataList.length>0" style="font-size:56px !important;"><i class="fa fa-smile-o" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> {{UserDataList[0].HappyClient}}</h1>
+     <p>Happy Clients</p>
+    </div>
+    <div class="aboutMainContent3-child2">
+      <h1 *ngIf="UserDataList.length>0" style="font-size:56px !important;"><i class="fa fa-address-book-o" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> {{UserDataList[0].Project}}</h1>
+      <p>Projects</p>
+    </div>
+    <div class="aboutMainContent3-child2">
+      <h1 *ngIf="UserDataList.length>0" style="font-size:56px !important;"><i class="fa fa-headphones" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> {{UserDataList[0].HofSupport}}</h1>
+      <p>Hours Of Support</p>
+    </div>
+    <div class="aboutMainContent3-child4">
+      <h1 *ngIf="UserDataList.length>0" style="font-size:56px !important;"><i class="fa fa-user" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> {{UserDataList[0].HardWork}}</h1>
+      <p>Hardwork</p>
+    </div>
+    </div>
+  
+  </div>
+  <br>
+  <br>
+  <div class="SkillsArea">
+    <h1>Skills</h1>
+    <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
+    <p style="font-size: 16px;text-align:justify" *ngIf="languageList1.length>0">
+     {{languageList1[0].Description}}
+    </p>
+    <div class="SkillsArea-Child1">
+      <div *ngFor="let p of languageList1">
+        <label>{{p.LanguageName}}</label>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nibh id risus cursus varius. Pellentesque tempor placerat massa, viverra scelerisque libero ullamcorper vitae.
+          <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>
         </p>
+      </div>
     
     </div>
-    <div class="aboutMainContent2">
-      <div class="aboutMainContent-child1">
-        <img class="aboutMainContent-child-Image" src="../assets/profile.jpg" height="100" width="100">
+    <div class="SkillsArea-Child2">
+      <div *ngFor="let p of languageList2">
+        <label>{{p.LanguageName}}</label>
+        <p>
+          <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>
+        </p>
       </div>
-      <div class="commontext">
-        <h1 >ASP.NET And Angular developer </h1>
-        <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </div>
-    
-      <div class="aboutMainsubContent">
-    
-        <div class="aboutMainContent-child2">
-          <ul>
-              <li>
-                  <i class="fa fa-chevron-right"></i><strong>Degree : </strong>
-              </li>
-              <li>
-                  <i class="fa fa-chevron-right"></i><strong>Session : </strong>
-              </li>
-              <li>
-                  <i class="fa fa-chevron-right"></i><strong>University :</strong>
-              </li>
-              <li>
-                  <i class="fa fa-chevron-right"></i><strong>Grade : </strong>
-              </li>
-    
-          </ul>
-    
-        </div>
-        <div class="aboutMainContent-child3">
-          <ul>
-              <li>
-                  <i class="fa fa-chevron-right"> </i> <strong>Date of Birth : </strong>
-              </li>
-              <li>
-                  <i class="fa fa-chevron-right"></i> <strong>Website : </strong>
-              </li>
-              <li>
-                  <i class="fa fa-chevron-right"></i> <strong>Phone : </strong>
-              </li>
-              <li>
-                  <i class="fa fa-chevron-right"></i> <strong>Address : </strong>
-              </li>
-    
-          </ul>
-        </div>
-      </div>
-    
-    
-    </div>
-    
-    
-    <div style="margin-top: 300px;">
-      <h1>Facts</h1>
-      <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
+      <!-- <label>HTML</label>
       <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nibh id risus cursus varius. Pellentesque tempor placerat massa, viverra scelerisque libero ullamcorper vitae.
+        <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
       </p>
-      <div class="aboutMainContent3">
-      <div class="aboutMainContent3-child1">
-       <h1 ><i class="fa fa-smile-o" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> 232</h1>
-       <p>Happy Clients consequuntur quae</p>
-      </div>
-      <div class="aboutMainContent3-child2">
-        <h1><i class="fa fa-address-book-o" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> 232</h1>
-        <p>Happy Clients consequuntur quae</p>
-      </div>
-      <div class="aboutMainContent3-child2">
-        <h1><i class="fa fa-headphones" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i>    232</h1>
-        <p>Happy Clients consequuntur quae</p>
-      </div>
-      <div class="aboutMainContent3-child4">
-        <h1><i class="fa fa-user" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> 232</h1>
-        <p>Happy Clients consequuntur quae</p>
-      </div>
-      </div>
-    
-    </div>
-    <br>
-    <div class="SkillsArea">
-      <h1>Skills</h1>
-      <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
+      <label>CSS</label>
       <p>
-        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+        <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
       </p>
-      <div class="SkillsArea-Child1">
-      <label>C</label>
+      <label>Java Script</label>
       <p>
         <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
       </p>
-      <label>C++</label>
+      <label>Angular</label>
       <p>
         <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-      </p>
-      <label>C#</label>
-      <p>
-        <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
-      </p>
-      <label>ASP.NET</label>
-      <p>
-        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-      </p>
-      </div>
-      <div class="SkillsArea-Child2">
-        <label>HTML</label>
-        <p>
-          <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
-        </p>
-        <label>CSS</label>
-        <p>
-          <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
-        </p>
-        <label>Java Script</label>
-        <p>
-          <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-        </p>
-        <label>Angular</label>
-        <p>
-          <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-        </p>
-    
-      </div>
-    
+      </p> -->
+  
     </div>
-    </section>
+  
+  </div>
+  </section>
+  

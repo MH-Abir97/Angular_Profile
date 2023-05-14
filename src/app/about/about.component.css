@@ -108,7 +108,8 @@
 
 }
 .aboutMainContent3 .aboutMainContent3-child1 p{
- margin: 0px 55px;
+  margin: -38px 64px;
+  width: 100%;
  font-weight: bold;
  }
 .aboutMainContent3 .aboutMainContent3-child2{
@@ -118,8 +119,9 @@
  margin-left: 3%;
 }
 .aboutMainContent3 .aboutMainContent3-child2 p{
-  margin: 0px 55px;
+  margin: -38px 70px;
   font-weight: bold;
+  width: 100%;
 }
 .aboutMainContent3 .aboutMainContent3-child3{
   float: left;
@@ -128,8 +130,9 @@
  margin-left: 3%;
 }
 .aboutMainContent3 .aboutMainContent3-child3 p{
-  margin: 0px 55px;
+  margin: -38px 64px;
   font-weight: bold;
+  width: 100%;
 }
 .aboutMainContent3 .aboutMainContent3-child4{
   float: left;
@@ -137,11 +140,13 @@
   margin-left: 3%;
 }
 .aboutMainContent3 .aboutMainContent3-child4 p{
-  margin: 0px 50px;
+  margin: -38px 60px;
   font-weight: bold;
+  width: 100%;
 }
 .SkillsArea{
-  width: 100%
+  width: 100%;
+  
 }
 .SkillsArea-Child1{
   width:48% ;

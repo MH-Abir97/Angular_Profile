@@ -14,13 +14,14 @@
   text-align: justify;
   height: auto;
   padding: 1%;
+  
 }
 
 .resumeArea-Child1{
   width: 0.2%;
   float: left;
   text-align: justify;
-  height: 1050px;
+   height: 1050px;
   background-color: #149ddd;
   margin-top: 35px;
 }
@@ -79,6 +80,11 @@
   font-size: 14px;
   text-align: justify;
   font-weight: bold;
+  
+}
+.QualificationDiv p{
+  font-style: italic;
+  font-size: 16px;
 }
 .resumeArea-Child3 ul li{
   font-size: 14px;

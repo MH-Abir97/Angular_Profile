@@ -10,6 +10,7 @@ export class AboutComponent {
   languageList!:Observable<any>;
   languageList1:any=[];
   languageList2:any=[];
+  UserDataList:any=[];
   /**
    *
    */
@@ -20,34 +21,26 @@ export class AboutComponent {
 
   ngOnInit():void {
     this.GetAll();
+    this.GetAllAbout();
   }
   GetAll(){
     debugger;
     const collectionIstance=collection(this._fireStore,'Language');
     collectionData(collectionIstance,{idField:'id'}).subscribe((val)=>{
-      console.log('Data',val);
-
-
+      this.languageList1=val.filter((aData:any)=>aData.LanguageType=="Backend").sort((a:any, b:any) => a.Sort.localeCompare(b.Sort));
+      this.languageList2=val.filter((aData:any)=>aData.LanguageType =="Frontend" ).sort((a:any, b:any) => a.Sort.localeCompare(b.Sort));
     })
     this.languageList=collectionData(collectionIstance,{idField:'id'});
-    this.languageList.forEach(aData => {
-      //if(aData.LanguageName=="C" ||aData.LanguageName=="C#" || aData.LanguageName=="ASP.NET Core" || aData.LanguageName=="ASP.NET"){
-        this.languageList1.push(aData);
-        console.log( this.languageList1)
-     // }else{
-        //this.languageList2.push(aData);
-      //}
-    });
-
-    // for (let i = 0; i < this.languageList1.length; i++) {
-    //     if(this.languageList1[0].LanguageName=="C" ||this.languageList1[0].LanguageName=="C#" || this.languageList1[0].LanguageName=="ASP.NET Core" || this.languageList1[0].LanguageName=="ASP.NET"){
-    //       this.languageList1.push(this.languageList1[i]);
-    //        }else{
-    //          this.languageList2.push(this.languageList1[i]);
-    //     }
-
-    // }
-
+    
    }
 
+
+   GetAllAbout(){
+    debugger;
+    const collectionInstance=collection(this._fireStore,'EducationAbout');
+    collectionData(collectionInstance,{idField:'id'}).subscribe((data:any)=>{
+      this.UserDataList=data;
+    });
+    this.UserDataList=collectionData(collectionInstance,{idField:'id'});
+  }
 }

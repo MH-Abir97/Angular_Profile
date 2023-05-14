@@ -17,7 +17,10 @@ export class LanguageComponent {
    constructor(private _fb :FormBuilder,private _fireStore:Firestore) {
    this.languageEntry=_fb.group({
      LanguageName:'',
-     LanguagePercent:0
+     LanguagePercent:0,
+     Sort:0,
+     LanguageType:'',
+     Description:'',
     })
 
    }
