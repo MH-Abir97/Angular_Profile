@@ -128,9 +128,12 @@
     <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
       
       <mat-toolbar-row style="color: black;">
-        <!-- <h1 *ngIf="UserDataList.length>0">{{UserDataList[0].Designation}}</h1> -->
+     
+        <h1 *ngIf="UserDataList.length>0">{{UserDataList[0].Designation}}
+          <br><span style="font-size: 16px !important;">AT Retail Technologies</span>
+        </h1>
 
-        <span class="example-spacer" *ngIf="UserDataList.length>0">{{UserDataList[0].DescriptionTwo}}</span>
+        <!-- <span class="example-spacer" *ngIf="UserDataList.length>0">{{UserDataList[0].DescriptionTwo}}</span> -->
       </mat-toolbar-row>
       <!-- <p *ngIf="UserDataList.length>0" style="width: 100%;">{{UserDataList[0].DescriptionTwo}}</p> -->
     </mat-toolbar>
