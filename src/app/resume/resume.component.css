@@ -137,6 +137,7 @@
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
+  width: 49% !important;
   /* margin-top: -10px; */
   
 }
@@ -147,4 +148,14 @@
 
 mat-toolbar{
   margin: 10px;
+  width: 49%;
+}
+
+.mat-toolbar.mat-primary {
+  background: #1f7bc5 !important;
+  color: #fff;
+}
+
+.mat-toolbar-Content2 .mat-toolbar-row, .mat-toolbar-single-row{
+  width: 10% !important;
 }
