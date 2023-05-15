@@ -21,7 +21,7 @@
   width: 0.2%;
   float: left;
   text-align: justify;
-   height: 1050px;
+   height: 1060px;
   background-color: #149ddd;
   margin-top: 35px;
 }
@@ -30,7 +30,7 @@
   width: 0.2%;
   float: left;
   text-align: justify;
-  height: 1080px;
+  height: 1060px;
   background-color: #149ddd;
   margin-top: 35px;
 }
@@ -95,7 +95,7 @@
   font-size: 16px;
   text-align: justify;
   font-weight: 100;
-  line-height: 5px;
+  line-height: 6px;
   font-style: italic;
 
 }
@@ -112,4 +112,39 @@
 .resumeArea-Child4 ol li{
   font-size: 14px;
   text-align: justify;
+}
+
+.mat-toolbar-Content{
+  width: 100%;
+  height: auto;
+}
+.mat-toolbar-Content1{
+  width: 49%;
+  float: left;
+}
+.mat-toolbar-Content2{
+  width: 49%;
+  float: left;
+}
+
+/* mat-toolbar-row{
+  line-height: 0.5px !important;
+  font-size: 14px;
+} */
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 36px !important;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  /* margin-top: -10px; */
+  
+}
+.mat-toolbar-Content1 p{
+ line-height: 0.5px;
+  
+}
+
+mat-toolbar{
+  margin: 10px;
 }

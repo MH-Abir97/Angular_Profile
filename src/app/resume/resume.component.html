@@ -1,5 +1,5 @@
 
-<div class="resumeArea">
+<!-- <div class="resumeArea">
   <h1>Resume</h1>
   <div style="height: 4px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
 
@@ -35,7 +35,7 @@
 
   <div class="resumeArea-Child4">
     <h2>Professional Experience</h2>
-    <h2>{{UserDataList[0].Designation}}</h2>
+    <h2 *ngIf="UserDataList.length>0">{{UserDataList[0].Designation}}</h2>
      <p  style="font-weight: 100 !important;text-align: justify !important;" *ngIf="UserDataList.length>0">{{UserDataList[0].DescriptionTwo}}</p>
       <p *ngIf="SkillsList.length>0">
         {{SkillsList[0].Project}} :
@@ -79,8 +79,107 @@
   </div>
 
 
-</div>
+</div> -->
 <br>
+<div class="mat-toolbar-Content">
+
+  <div class="mat-toolbar-Content1">
+    <mat-toolbar color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
+      <mat-toolbar-row style="color: black;">
+        <p *ngIf="UserDataList.length>0">{{UserDataList[0].Address}}</p>
+      </mat-toolbar-row>
+      <mat-toolbar-row style="color: black;">
+        <p *ngIf="UserDataList.length>0">{{UserDataList[0].Phone}}</p>
+      </mat-toolbar-row>
+      <mat-toolbar-row style="color: black;">
+        <p *ngIf="UserDataList.length>0">{{UserDataList[0].Email}}</p>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+
+      <mat-toolbar *ngFor="let q of qualificationList ;let i=index; "  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
+        <mat-toolbar-row style="color: black;">
+          <h2>{{q.EducationBackground }}</h2>
+        </mat-toolbar-row>
+        <mat-toolbar-row style="color: black;">
+          <p>{{q.Subject}}</p>
+        </mat-toolbar-row>
+        <mat-toolbar-row style="color: black;">
+          <p>{{q.Session }}</p>
+        </mat-toolbar-row>
+        <mat-toolbar-row style="color: black;">
+          <p>{{q.institutionName}}</p>
+        </mat-toolbar-row>
+        <mat-toolbar-row style="color: black;">
+          <p>{{q.InstLocation}}</p>
+        </mat-toolbar-row>
+        
+      </mat-toolbar>
+
+   
+  </div>
+
+  <div class="mat-toolbar-Content2">
+    <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
+      
+      <mat-toolbar-row style="color: black;">
+        <h1 *ngIf="SkillsList.length >0">{{SkillsList[0].Project}} : </h1>
+      </mat-toolbar-row>
+      <mat-toolbar-row style="color: black;" *ngFor="let f of SkillsList " >
+        <p>{{f.ModuleName}}</p>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
+      
+      <mat-toolbar-row style="color: black;">
+        <h1 *ngIf="OthersSkillList.length >0">{{OthersSkillList[0].Project}} : </h1>
+      </mat-toolbar-row>
+      <mat-toolbar-row style="color: black;" *ngFor="let f of OthersSkillList " >
+        <p>{{f.ModuleName}}</p>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
+      
+      <mat-toolbar-row style="color: black;">
+        <h1 *ngIf="problemSolveSkill.length >0">{{problemSolveSkill[0].Project}} : </h1>
+      </mat-toolbar-row>
+      <mat-toolbar-row style="color: black;" *ngFor="let f of problemSolveSkill " >
+        <p>{{f.ModuleName}}</p>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
+      
+      <mat-toolbar-row style="color: black;">
+        <h1 *ngIf="frontEndSkillList.length >0">{{frontEndSkillList[0].Project}} : </h1>
+      </mat-toolbar-row>
+      <mat-toolbar-row style="color: black;" *ngFor="let f of frontEndSkillList " >
+        <p>{{f.ModuleName}}</p>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
+      
+      <mat-toolbar-row style="color: black;">
+        <h1 *ngIf="sqlSkillList.length >0">{{sqlSkillList[0].Project}} : </h1>
+      </mat-toolbar-row>
+      <mat-toolbar-row style="color: black;" *ngFor="let f of sqlSkillList " >
+        <p>{{f.ModuleName}}</p>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
+      
+      <mat-toolbar-row style="color: black;">
+        <h1 *ngIf="sqlSkillList.length >0">{{reportSkill[0].Project}} : </h1>
+      </mat-toolbar-row>
+      <mat-toolbar-row style="color: black;" *ngFor="let f of reportSkill " >
+        <p>{{f.ModuleName}}</p>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+</div>
+
+
 <!--
 <div class="resumeArea1">
   <h1>Education</h1>

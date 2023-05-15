@@ -33,6 +33,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { QualificationComponent } from './qualification/qualification.component';
 import { SkillComponent } from './skill/skill.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ImagePreviewComponent } from './image-preview/image-preview.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,7 @@ import { SkillComponent } from './skill/skill.component';
     UserDetailsComponent,
     QualificationComponent,
     SkillComponent,
+    ImagePreviewComponent,
 
 
   ],
@@ -72,7 +75,7 @@ import { SkillComponent } from './skill/skill.component';
     RouterModule,
     MatTableModule,
     MatSelectModule,
-    
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
