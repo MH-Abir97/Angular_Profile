@@ -35,6 +35,7 @@ import { QualificationComponent } from './qualification/qualification.component'
 import { SkillComponent } from './skill/skill.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ImagePreviewComponent } from './image-preview/image-preview.component';
+import { SocialMediaComponent } from './social-media/social-media.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { ImagePreviewComponent } from './image-preview/image-preview.component';
     QualificationComponent,
     SkillComponent,
     ImagePreviewComponent,
+    SocialMediaComponent,
 
 
   ],

@@ -5,7 +5,7 @@
       <p>
         <span *ngIf="UserDataList.length>0"> {{UserDataList[0].DescriptionTwo}}</span>
       </p>
-  
+
   </div>
   <div class="aboutMainContent2">
     <div class="aboutMainContent-child1">
@@ -17,9 +17,9 @@
         <span *ngIf="UserDataList.length>0"> {{UserDataList[0].DescriptionOne}}</span>
       </p>
     </div>
-  
+
     <div class="aboutMainsubContent">
-  
+
       <div class="aboutMainContent-child2">
         <ul>
             <li>
@@ -34,9 +34,9 @@
             <li>
                 <i class="fa fa-chevron-right"></i><strong>Grade : </strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].Grade}}</span>
             </li>
-  
+
         </ul>
-  
+
       </div>
       <div class="aboutMainContent-child3">
         <ul>
@@ -52,20 +52,20 @@
             <li>
                 <i class="fa fa-chevron-right"></i> <strong>Address : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].Address}}</span>
             </li>
-  
+
         </ul>
       </div>
     </div>
-  
-  
+
+
   </div>
-  
-  
+
+
   <div style="margin-top: 320px;">
     <h1>Facts</h1>
     <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
     <p style="font-size: 16px;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nibh id risus cursus varius. Pellentesque tempor placerat massa, viverra scelerisque libero ullamcorper vitae.
+      <span *ngIf="UserDataList.length>0"> {{UserDataList[0].DescriptionTwo}}</span>
     </p>
     <div class="aboutMainContent3">
     <div class="aboutMainContent3-child1">
@@ -85,15 +85,15 @@
       <p>Hardwork</p>
     </div>
     </div>
-  
+
   </div>
   <br>
   <br>
   <div class="SkillsArea">
     <h1>Skills</h1>
     <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
-    <p style="font-size: 16px;text-align:justify" *ngIf="languageList1.length>0">
-     {{languageList1[0].Description}}
+    <p style="font-size: 16px;text-align:justify" *ngIf="UserDataList.length>0">
+     {{UserDataList[0].DescriptionThree}}
     </p>
     <div class="SkillsArea-Child1">
       <div *ngFor="let p of languageList1">
@@ -102,7 +102,7 @@
           <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>
         </p>
       </div>
-    
+
     </div>
     <div class="SkillsArea-Child2">
       <div *ngFor="let p of languageList2">
@@ -127,9 +127,8 @@
       <p>
         <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
       </p> -->
-  
+
     </div>
-  
+
   </div>
   </section>
-  

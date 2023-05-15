@@ -33,6 +33,8 @@ export class UserDetailsComponent {
     Location:'',
     DescriptionThree:'',
     Designation:'',
+    formAdnToJoining:'',
+    WorkingOrganization:'',
    })
   }
 

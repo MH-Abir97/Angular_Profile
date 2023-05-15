@@ -1,0 +1,57 @@
+
+<mat-card>
+  <br>
+  <form [formGroup]="socialEntry">
+  <table style="width: 100%;">
+    <tr>
+      <td style="width: 25%;padding: 15px;">
+          <mat-form-field appearance="outline" style="width: 100% !important">
+            <mat-label>Social Media</mat-label>
+            <input matInput formControlName="SocialMedia" placeholder="Social Media">
+          </mat-form-field>
+      </td>
+      <td style="width: 25%;padding: 15px;">
+        <mat-form-field appearance="outline" style="width: 100% !important">
+          <mat-label>Social Link</mat-label>
+          <input matInput formControlName="SocialLink" placeholder="Social Icon">
+        </mat-form-field>
+    </td>
+    </tr>
+  </table>
+  <table  style="width: 100%;">
+    <tr>
+      <td style="width: 20%;padding-left: 15px;">
+        <button mat-button (click)="onSave()" color="primary" style="background: #149ddd;color: white;width: 10%;">{{saveBtn}}</button>
+        <button mat-button (click)="ResetBtn()" color="primary" style="background: #dd1919;color: white;margin:10px;">Clear</button>
+      </td>
+    </tr>
+  </table>
+
+</form>
+
+
+<table   style="text-align: center;" >
+
+  <br>
+<tr>
+  <th>SL No</th>
+  <th>Social Icon</th>
+  <th>Social link</th>
+
+  <th>Action</th>
+</tr>
+ <tr *ngFor="let l of socialDataList | async;let i=index">
+  <td>{{i+1}}</td>
+  <td>{{l.SocialMedia}}</td>
+  <td>{{l.SocialLink}}</td>
+
+  <td>
+    <button mat-button (click)="Edit(l)" color="primary" style="background: #149ddd;color: white;">Edit</button>
+
+  </td>
+ </tr>
+</table>
+<br>
+<br>
+</mat-card>
+

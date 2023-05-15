@@ -6,15 +6,16 @@
 <mat-drawer-container class="example-container">
   <mat-drawer mode="side" class="sideNavBar" opened  >
     <div class="profileImage">
-    <img src="../assets/PersonalImage.jpg" class="profilePicture">
+
+    <a  routerLink="/" > <img src="../assets/PersonalImage.jpg" class="profilePicture"></a>
 
     <p style="text-align: center;font-size: 20px;">MH Anwar Hossain Abir</p>
     <div class="socialLink">
 
-      <a>
-        <i class="fa fa-linkedin"></i>
+      <a *ngFor="let s of socialDataList |async" href="{{s.SocialLink}}">
+        <i class="{{s.SocialMedia}}"></i>
       </a>
-      <a>
+      <!-- <a>
         <i class="fa fa-github"></i>
       </a>
       <a>
@@ -26,7 +27,7 @@
 
       <a>
         <i class="fa fa-facebook"></i>
-       </a>
+       </a> -->
      </div>
      <div class="navBarManue">
       <ul>
@@ -43,9 +44,9 @@
         <a routerLink="/portfolio"><i class="fa fa-book"></i> Portfolio</a>
        </li>
        <li>
-        <a routerLink="/contract"><i class="fa fa-book"></i> Contract</a>
+        <a routerLink="/contract"><i class="fa fa-book"></i> Contact</a>
        </li>
-       
+
        <!-- <li>
         <a href="../app/contract/contract.component.html"><i class="fa fa-book"></i> Contract</a>
        </li> -->

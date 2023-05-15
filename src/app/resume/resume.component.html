@@ -117,29 +117,36 @@
         <mat-toolbar-row style="color: black;">
           <p>{{q.InstLocation}}</p>
         </mat-toolbar-row>
-        
+
       </mat-toolbar>
 
-   
+
   </div>
 
   <div class="mat-toolbar-Content2">
 
     <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
-      
       <mat-toolbar-row style="color: black;">
-     
-        <h1 *ngIf="UserDataList.length>0">{{UserDataList[0].Designation}}
-          <br><span style="font-size: 16px !important;">AT Retail Technologies</span>
+        <h1 *ngIf="UserDataList.length>0">
+          <span style="font-style:normal !important;font-size: 26px;">Professional Experience</span>
+          <br>
+         <span style="font-style:normal !important;font-size: 18px;">{{UserDataList[0].Designation}}</span>
+          <br><span style="font-size: 16px !important;font-style:normal !important;font-weight:200;">{{UserDataList[0].formAdnToJoining}} at {{UserDataList[0].WorkingOrganization}}</span>
         </h1>
-
-        <!-- <span class="example-spacer" *ngIf="UserDataList.length>0">{{UserDataList[0].DescriptionTwo}}</span> -->
       </mat-toolbar-row>
-      <!-- <p *ngIf="UserDataList.length>0" style="width: 100%;">{{UserDataList[0].DescriptionTwo}}</p> -->
+    </mat-toolbar>
+    <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
+      <mat-toolbar-row style="color: black;">
+        <h1 *ngIf="UserDataList.length>0">
+         <br>
+         <span style="font-style:normal !important;font-size: 18px;">{{UserDataList[1].Designation}}</span>
+          <br><span style="font-size: 16px !important;font-style:normal !important;font-weight:200;">{{UserDataList[1].formAdnToJoining}} at {{UserDataList[1].WorkingOrganization}}</span>
+        </h1>
+      </mat-toolbar-row>
     </mat-toolbar>
 
     <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
-      
+
       <mat-toolbar-row style="color: black;">
         <h1 *ngIf="SkillsList.length >0">{{SkillsList[0].Project}} : </h1>
       </mat-toolbar-row>
@@ -148,7 +155,7 @@
       </mat-toolbar-row>
     </mat-toolbar>
     <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
-      
+
       <mat-toolbar-row style="color: black;">
         <h1 *ngIf="OthersSkillList.length >0">{{OthersSkillList[0].Project}} : </h1>
       </mat-toolbar-row>
@@ -157,7 +164,7 @@
       </mat-toolbar-row>
     </mat-toolbar>
     <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
-      
+
       <mat-toolbar-row style="color: black;">
         <h1 *ngIf="problemSolveSkill.length >0">{{problemSolveSkill[0].Project}} : </h1>
       </mat-toolbar-row>
@@ -167,7 +174,7 @@
     </mat-toolbar>
 
     <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
-      
+
       <mat-toolbar-row style="color: black;">
         <h1 *ngIf="frontEndSkillList.length >0">{{frontEndSkillList[0].Project}} : </h1>
       </mat-toolbar-row>
@@ -177,7 +184,7 @@
     </mat-toolbar>
 
     <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
-      
+
       <mat-toolbar-row style="color: black;">
         <h1 *ngIf="sqlSkillList.length >0">{{sqlSkillList[0].Project}} : </h1>
       </mat-toolbar-row>
@@ -186,7 +193,7 @@
       </mat-toolbar-row>
     </mat-toolbar>
     <mat-toolbar  color="primary" style="width: 6px;background-color: #1f7bc5 !important;">
-      
+
       <mat-toolbar-row style="color: black;">
         <h1 *ngIf="sqlSkillList.length >0">{{reportSkill[0].Project}} : </h1>
       </mat-toolbar-row>
