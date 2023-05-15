@@ -32,6 +32,7 @@ export class UserDetailsComponent {
     Email:'',
     Location:'',
     DescriptionThree:'',
+    Designation:'',
    })
   }
 
@@ -48,7 +49,7 @@ export class UserDetailsComponent {
       this.userId='';
       this.saveBtn='Save';
     }
-   
+
   }
 
   SaveData(){

@@ -6,17 +6,18 @@
     <div class="contractArea-child1">
         <mat-card>
             <mat-card-content >
+
               <!-- <span style="font-size: 36px;"><i class="fa fa-map-marker" ></i> Location</span> -->
                 <div class="socialLink">
-                 <span> <a><i class="fa fa-map-marker"></i></a> Mohakali DOHS,House #327,Road #22</span>  
-                </div>
-                <br>
-                <div class="socialLink">  
-                 <span> <a><i class="fa fa-envelope"></i></a> mhanwar97@gmail.com</span>    
+                 <span *ngIf="contractDataList.length>0"> <a><i class="fa fa-map-marker"></i></a> {{contractDataList[0].Address}}</span>
                 </div>
                 <br>
                 <div class="socialLink">
-                 <span> <a><i class="fa fa-phone"></i></a>Call : 01719872820</span>   
+                 <span *ngIf="contractDataList.length>0"> <a><i class="fa fa-envelope"></i></a> {{contractDataList[0].Email}}</span>
+                </div>
+                <br>
+                <div class="socialLink">
+                 <span *ngIf="contractDataList.length>0"> <a><i class="fa fa-phone"></i></a>Call : {{contractDataList[0].Phone}}</span>
                 </div>
                 <br>
                 <br>
@@ -24,8 +25,8 @@
                     <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:450px;}</style></div></div>
                 </div>
 
-             
-              
+
+
             </mat-card-content>
         </mat-card>
     </div>
@@ -53,17 +54,17 @@
                                 <mat-label>Subject</mat-label>
                                 <input matInput >
                             </mat-form-field>
-                          
+
                         </td>
                       </tr>
                       <tr>
                         <td colspan="2">
                             <mat-form-field class="example-full-width" appearance="outline" style="width: 100% !important">
                                 <mat-label>Message</mat-label>
-                             
+
                                 <textarea matInput placeholder="Some thing" rows="6" cols="6"></textarea>
                             </mat-form-field>
-                          
+
                         </td>
                       </tr>
                       <tr>
@@ -74,8 +75,8 @@
                         </td>
                       </tr>
                     </table>
-                
-                  
+
+
                 </form>
             </mat-card-content>
         </mat-card>

@@ -24,19 +24,19 @@ export class AboutComponent {
     this.GetAllAbout();
   }
   GetAll(){
-    debugger;
+
     const collectionIstance=collection(this._fireStore,'Language');
     collectionData(collectionIstance,{idField:'id'}).subscribe((val)=>{
       this.languageList1=val.filter((aData:any)=>aData.LanguageType=="Backend").sort((a:any, b:any) => a.Sort.localeCompare(b.Sort));
       this.languageList2=val.filter((aData:any)=>aData.LanguageType =="Frontend" ).sort((a:any, b:any) => a.Sort.localeCompare(b.Sort));
     })
     this.languageList=collectionData(collectionIstance,{idField:'id'});
-    
+
    }
 
 
    GetAllAbout(){
-    debugger;
+
     const collectionInstance=collection(this._fireStore,'EducationAbout');
     collectionData(collectionInstance,{idField:'id'}).subscribe((data:any)=>{
       this.UserDataList=data;
