@@ -306,7 +306,68 @@
  }
 }
 
-@media screen and (max-width: 1024px) and  (min-width: 912px)  {
+@media screen and (max-width: 912px) and  (min-width: 900px) {
+  .SkillsArea-Child1{
+    width: 395px !important;
+    padding: 0 !important;
+    float: left;
+    font-size: 12px;
+   }
+   .SkillsArea-Child2{
+     width: 395px !important;
+     padding: 0 !important;
+     float: left;
+     font-size: 12px;
+
+   }
+   .ResponsiveDecription{
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 100;
+ }
+}
+
+@media screen and (max-width: 1000px) and  (min-width: 913px)  {
+  .SkillsArea-Child1{
+    width: 270px !important;
+    padding: 0 !important;
+    float: left;
+    font-size: 12px;
+   }
+   .SkillsArea-Child2{
+     width: 270px !important;
+     padding: 0 !important;
+     float: left;
+     font-size: 12px;
+
+   }
+   .ResponsiveDecription{
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 100;
+ }
+}
+@media screen and (max-width: 1030px) and  (min-width: 1001px)  {
+  .SkillsArea-Child1{
+    width: 300px !important;
+    padding: 0 !important;
+    float: left;
+    font-size: 12px;
+   }
+   .SkillsArea-Child2{
+     width: 300px !important;
+     padding: 0 !important;
+     float: left;
+     font-size: 12px;
+
+   }
+   .ResponsiveDecription{
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 100;
+ }
+}
+@media screen and (max-width: 1080px) and  (min-width: 1025px)  {
   .SkillsArea-Child1{
     width: 320px !important;
     padding: 0 !important;
@@ -326,6 +387,8 @@
     font-weight: 100;
  }
 }
+
+
 
 
 

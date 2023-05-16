@@ -19,6 +19,18 @@
         display: none;
       }
   }
+
+  @media screen and (max-width: 912px) {
+    .sideNavBar{
+        display: none;
+      }
+  }
+  /* @media screen and (max-width: 920px) and (min-width: 913px) {
+    .sideNavBar{
+        display: none;
+      }
+  } */
+  
   
   
 
