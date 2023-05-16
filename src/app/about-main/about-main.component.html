@@ -64,7 +64,7 @@
   <div style="margin-top: 320px;">
     <h1>Facts</h1>
     <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
-    <p style="font-size: 16px;">
+    <p style="font-size: 16px;" class="ResponsiveDecription">
       <span *ngIf="UserDataList.length>0"> {{UserDataList[0].DescriptionTwo}}</span>
     </p>
     <div class="aboutMainContent3">
@@ -89,10 +89,10 @@
   </div>
   <br>
   <br>
-  <div class="SkillsArea">
-    <h1>Skills</h1>
-    <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
-    <p style="font-size: 16px;text-align:justify" *ngIf="UserDataList.length>0">
+  <div class="SkillsArea" style="display: block">
+    <h1 class="responsiveSkill" style="display: block;width:100px;">Skills</h1>
+    <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;display: block"></div>
+    <p style="font-size: 16px;text-align:justify" *ngIf="UserDataList.length>0" class="ResponsiveDecription">
      {{UserDataList[0].DescriptionThree}}
     </p>
     <div class="SkillsArea-Child1">

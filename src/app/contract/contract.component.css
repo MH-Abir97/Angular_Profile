@@ -24,7 +24,7 @@
     margin-left: auto;
 }
 .socialLink a{
-   
+
     font-size: 18px;
     display: inline-block;
     background: #dff3fc;
@@ -37,11 +37,11 @@
     width: 36px;
     height: 18px;
     transition: 0.3s;
-   
+
 }
 
 .socialLink a:hover{
-   
+
     font-size: 18px;
     display: inline-block;
     background: #149ddd;
@@ -54,7 +54,7 @@
     width: 36px;
     height: 18px;
     transition: 0.3s;
-   
+
 }
 .mat-mdc-form-field-infix {
     flex: auto;
@@ -62,4 +62,11 @@
     width: 300px !important;
     position: relative;
     box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 375px) {
+ .contractArea-child2{
+   width: 400px !important;
+ }
 }

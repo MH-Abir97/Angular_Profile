@@ -31,7 +31,7 @@ export class ResumeComponent {
 
   }
   GetAllAbout(){
-    debugger;
+
     const collectionInstance=collection(this._fireStore,'EducationAbout');
     collectionData(collectionInstance,{idField:'id'}).subscribe((data:any)=>{
       this.UserDataList=data;
@@ -53,7 +53,7 @@ export class ResumeComponent {
   }
 
   GetAllSkills(){
-    debugger;
+
     const instance=collection(this._fireStore,'Skills');
     collectionData(instance,{idField:'id'}).subscribe((data:any)=>{
       this.frontEndSkillList=data.filter((aData:any)=>aData.Project.match(/Front-End/gi));

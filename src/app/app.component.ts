@@ -23,7 +23,7 @@ export class AppComponent {
 
 
   HomeBtn(route:string){
-   debugger;
+
 
   // window.scrollTo({ top: 0, behavior: 'smooth' });
     // if(route=='home'){

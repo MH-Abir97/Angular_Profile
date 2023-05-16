@@ -34,7 +34,7 @@ export class AboutMainComponent {
 
 
    GetAllAbout(){
-    debugger;
+
     const collectionInstance=collection(this._fireStore,'EducationAbout');
     collectionData(collectionInstance,{idField:'id'}).subscribe((data:any)=>{
       this.UserDataList=data;

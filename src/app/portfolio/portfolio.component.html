@@ -1,10 +1,12 @@
 
 
-<h1 >Portfolio</h1>
-<div style="height: 4px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
 
+
+<div class="MainDiv">
+  <h1 style="display: block;width:100px;">Portfolio</h1>
+<div style="height: 4px;width:55px;background-color: #1f7bc5;margin-top:-10px; display: block;"></div>
 <div class="portfolio">
-    <div class="portfolio1">
+    <div class="portfolio1 portfolio11">
         <mat-card class="example-card" (click)="OpenDialog('../assets/ERP/SalesOrder.png')">
             <img mat-card-image class="portfolioImage"  src="../assets/ERP/SalesOrder.png" alt="Photo of a Shiba Inu">
             <button mat-button class="IamgeBtn" style="background-color: #149ddd;width: 100% !important;border-radius: 0% !important;">
@@ -12,7 +14,7 @@
             </button>
            </mat-card>
     </div>
-    <div class="portfolio1">
+    <div class="portfolio1 portfolio22">
         <mat-card class="example-card" (click)="OpenDialog('../assets/ERP/IWO.png')">
             <img mat-card-image class="portfolioImage"  src="../assets/ERP/IWO.png" alt="Photo of a Shiba Inu">
             <button mat-button class="IamgeBtn" style="background-color: #149ddd;width: 100% !important;border-radius: 0% !important;">
@@ -106,15 +108,17 @@
         </mat-card>
     </div>
 </div>
+
+</div>
 <!-- <div class="portfolioArea">
 <div class="portfolioArea-child1">
-      
+
 <img   src="../assets/ERP/SalesOrder.png" class="portfolioImage">
 
 </div>
 <div class="portfolioArea-child2">
-   
- <img (click)="OpenDialog('../assets/ERP/IWO.png')" src="../assets/ERP/IWO.png" class="portfolioImage"> 
+
+ <img (click)="OpenDialog('../assets/ERP/IWO.png')" src="../assets/ERP/IWO.png" class="portfolioImage">
 </div>
 </div> -->
 
@@ -135,7 +139,7 @@
         <img (click)="OpenDialog('../assets/ERP/transfer.png')" src="../assets/ERP/transfer.png" class="portfolioImage">
     </div>
 </div> -->
-<!-- 
+<!--
 <div class="portfolioArea">
     <div class="portfolioArea-child1">
     <img (click)="OpenDialog('../assets/ERP/StockOpening.png')" src="../assets/ERP/StockOpening.png" class="portfolioImage">

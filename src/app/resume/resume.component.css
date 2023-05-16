@@ -139,11 +139,11 @@
   font-weight: 400;
   width: 49% !important;
   /* margin-top: -10px; */
-  
+
 }
 .mat-toolbar-Content1 p{
  line-height: 0.5px;
-  
+
 }
 
 mat-toolbar{
@@ -159,3 +159,53 @@ mat-toolbar{
 .mat-toolbar-Content2 .mat-toolbar-row, .mat-toolbar-single-row{
   width: 10% !important;
 }
+
+
+/* @media screen and (max-width: 480px) and  (min-width: 320px)  {
+  .mat-toolbar-Content1 {
+    width: 100%;
+    float: left;
+    padding-left: 2%;
+  }
+
+  .mat-toolbar-Content2 {
+    width: 49%;
+    float: left;
+    padding-left: 3%;
+    margin-top: 29px;
+}
+
+.mat-toolbar-row h1{
+ font-size: 12px !important;
+ font-weight: 100 !important;
+}
+.mat-toolbar-row p{
+  font-size: 10px;
+ }
+
+}
+
+@media screen and (max-width: 600px) and  (min-width: 480px)  {
+  .mat-toolbar-Content1 {
+    width: 100%;
+    float: left;
+    padding-left: 2%;
+  }
+
+  .mat-toolbar-Content2 {
+    width: 49%;
+    float: left;
+    padding-left: 3%;
+    margin-top: 29px;
+}
+
+.mat-toolbar-row h1{
+ font-size: 26px !important;
+ font-weight: 100 !important;
+}
+.mat-toolbar-row p{
+  font-size: 14px !important;
+ }
+
+}
+ */

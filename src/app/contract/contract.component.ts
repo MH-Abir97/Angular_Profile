@@ -7,7 +7,7 @@ import { Firestore, collection, collectionData } from '@angular/fire/firestore';
   styleUrls: ['./contract.component.css']
 })
 export class ContractComponent {
- 
+
   contractDataList:any=[];
 
   constructor(private _fireStore:Firestore) {
@@ -17,7 +17,7 @@ export class ContractComponent {
     this.GetAllAbout();
   }
   GetAllAbout(){
-    debugger;
+    
     const collectionInstance=collection(this._fireStore,'EducationAbout');
     collectionData(collectionInstance,{idField:'id'}).subscribe((data:any)=>{
       this.contractDataList=data;

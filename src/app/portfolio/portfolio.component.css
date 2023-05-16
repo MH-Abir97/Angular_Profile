@@ -2,6 +2,7 @@
 .portfolioArea{
     width:100%;
     height: auto;
+    display: block;
 
 }
 
@@ -16,7 +17,7 @@
 .portfolioArea-child1{
     float:left;
     width: 22%;
-  
+
 
 }
 .portfolioArea-child2{
@@ -56,6 +57,60 @@
 
 .portfolioImage{
     height: 160px;
-   
+
 }
+
+@media screen and (max-width: 800px) and (min-width: 375px) {
+  .SkillsArea-Child1{
+    width: 320px !important;
+    padding: 0 !important;
+    float: left;
+    font-size: 12px;
+   }
+   .SkillsArea-Child2{
+     width: 320px !important;
+     padding: 0 !important;
+     float: left;
+     font-size: 12px;
+
+   }
+   .ResponsiveDecription{
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 100;
+ }
+ .portfolioImage {
+  height: 66px  !important;
+}
+}
+
+
+
+/* @media screen and (max-width: 414px)  {
+  .SkillsArea-Child1{
+    width: 320px !important;
+    padding: 0 !important;
+    float: left;
+    font-size: 12px;
+   }
+   .SkillsArea-Child2{
+     width: 320px !important;
+     padding: 0 !important;
+     float: left;
+     font-size: 12px;
+
+   }
+   .ResponsiveDecription{
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 100;
+ }
+ .MainDiv{
+  margin-top: 10px;
+ }
+ .portfolioImage {
+  height: 66px  !important;
+}
+} */
+
 
