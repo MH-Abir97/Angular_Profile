@@ -1,3 +1,28 @@
+/* @media screen and (max-width: 375px) and (max-) {
+  .sideNavBar{
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 400px) {
+    .sideNavBar{
+        display: none;
+      }
+  }
+  @media screen and (max-width: 414px) {
+    .sideNavBar{
+        display: none;
+      }
+  }
+  @media screen and (max-width: 820px) {
+    .sideNavBar{
+        display: none;
+      }
+  }
+  
+  
+
+
 .example-container {
     scroll-behavior: smooth;
   }

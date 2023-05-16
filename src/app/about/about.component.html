@@ -66,13 +66,13 @@
 <div style="margin-top: 320px;">
   <h1>Facts</h1>
   <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
-  <p style="font-size: 16px;">
+  <p style="font-size: 16px;" class="ResponsiveDecription">
       <span *ngIf="UserDataList.length>0"> {{UserDataList[0].DescriptionTwo}}</span>
   </p>
   <div class="aboutMainContent3">
   <div class="aboutMainContent3-child1">
    <h1 *ngIf="UserDataList.length>0" style="font-size:56px !important;"><i class="fa fa-smile-o" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> {{UserDataList[0].HappyClient}}</h1>
-   <p>Happy Clients</p>
+   <p class="aboutMainContentP1">Happy Clients</p>
   </div>
   <div class="aboutMainContent3-child2">
     <h1 *ngIf="UserDataList.length>0" style="font-size:56px !important;"><i class="fa fa-address-book-o" aria-hidden="true" style="color:#149ddd;font-size: 56px;"></i> {{UserDataList[0].Project}}</h1>
@@ -92,9 +92,9 @@
 <br>
 <br>
 <div class="SkillsArea">
-  <h1>Skills</h1>
+  <h1 class="responsiveSkill">Skills</h1>
   <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
-  <p style="font-size: 16px;text-align:justify" *ngIf="languageList1.length>0">
+  <p style="font-size: 16px;text-align:justify" class="ResponsiveDecription" *ngIf="languageList1.length>0">
    {{languageList1[0].Description}}
   </p>
   <div class="SkillsArea-Child1">

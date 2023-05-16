@@ -1,13 +1,13 @@
 
 .portfolioArea{
     width:100%;
-
+    height: auto;
 
 }
 
-.portfolioImage{
+.portfolioImage1{
     width: 99%;
-    height: 250px;
+    height: 220px;
     border: 1px solid #ddd; /* Gray border */
     border-radius: 4px;  /* Rounded border */
     padding: 5px; /* Some padding */
@@ -16,7 +16,7 @@
 .portfolioArea-child1{
     float:left;
     width: 22%;
-    padding: 1%;
+  
 
 }
 .portfolioArea-child2{
@@ -35,3 +35,27 @@
     width: 24%;
     padding: 1%;
 }
+.IamgeBtn:hover{
+    background-color:slategrey;
+}
+
+.example-card:hover{
+    background-color: rgb(5, 44, 44) !important;
+    /* box-shadow:6px 6px 6px 6px rgb(84, 93, 102); */
+    box-shadow: 5px 10px 8px 10px #888888;
+}
+.example-card{
+    box-shadow: 5px 10px 8px 5px #d3cece;
+}
+
+.portfolio1{
+    width:20%;
+    float: left;
+    padding: 2%;
+}
+
+.portfolioImage{
+    height: 160px;
+   
+}
+

@@ -36,6 +36,8 @@ import { SkillComponent } from './skill/skill.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ImagePreviewComponent } from './image-preview/image-preview.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
+import { AdminComponent } from './admin/admin.component';
+
 
 @NgModule({
   declarations: [
@@ -54,6 +56,7 @@ import { SocialMediaComponent } from './social-media/social-media.component';
     SkillComponent,
     ImagePreviewComponent,
     SocialMediaComponent,
+    AdminComponent,
 
 
   ],
@@ -77,7 +80,8 @@ import { SocialMediaComponent } from './social-media/social-media.component';
     RouterModule,
     MatTableModule,
     MatSelectModule,
-    MatDialogModule
+    MatDialogModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,6 +11,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { QualificationComponent } from './qualification/qualification.component';
 import { SkillComponent } from './skill/skill.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
 
@@ -25,6 +26,7 @@ const routes: Routes = [
    { path: 'education', component: QualificationComponent },
    { path: 'skill', component: SkillComponent },
    { path: 'social', component: SocialMediaComponent },
+  //  { path: 'admin', component: AdminComponent },
 
 ];
 

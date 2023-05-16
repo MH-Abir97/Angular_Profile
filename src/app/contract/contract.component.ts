@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Firestore, collection, collectionData } from '@angular/fire/firestore';
 
 @Component({
@@ -7,7 +7,7 @@ import { Firestore, collection, collectionData } from '@angular/fire/firestore';
   styleUrls: ['./contract.component.css']
 })
 export class ContractComponent {
-
+ 
   contractDataList:any=[];
 
   constructor(private _fireStore:Firestore) {
@@ -24,4 +24,6 @@ export class ContractComponent {
     });
     this.contractDataList=collectionData(collectionInstance,{idField:'id'});
   }
+
+
 }
