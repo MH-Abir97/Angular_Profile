@@ -1,3 +1,33 @@
+.mdc-card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 440px !important;
+}
+
+.mat-mdc-text-field-wrapper {
+    width: 440px !important;
+    height: 57px;
+}
+.example-full-width{
+    width: 190px  !important;
+    height: 57px;
+    padding: 0%;
+}
+
+
+.example-full-width1{
+    width: 400px !important;
+    height: 57px;
+}
+.example-full-width2{
+    width: 400px !important;
+    height: 10px !important;
+}
+button{
+    margin-top: 30px;
+}
+
 .contact{
     width:100%;
     margin-top: auto;
@@ -64,9 +94,645 @@
     box-sizing: border-box;
 }
 
+@media only screen  and (max-device-width : 720px)  {
 
-@media screen and (max-width: 800px) and (min-width: 375px) {
- .contractArea-child2{
-   width: 400px !important;
- }
+    .mdc-card {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 288px !important;
+    }
+    .mat-mdc-card-content {
+        display: block;
+        padding: 0 16px;
+        width: 288px !important;
+    }
+    .socialLink{
+        font-size:12px;
+    }
+
+    .contractArea-child2 {
+      
+        padding: 5px;
+    }
+
+  
+
+    .mat-mdc-text-field-wrapper {
+        width: 100px !important;
+        height: 57px;
+    }
+    .example-full-width{
+        width: 115px  !important;
+        height: 57px;
+        padding: 0%;
+    }
+    
+
+    .example-full-width1{
+        width: 255px !important;
+        height: 57px;
+    }
+    .example-full-width2{
+        width: 255px !important;
+        height: 10px !important;
+    }
+    button{
+        margin-top: 30px;
+    }
+   .mapouter{
+   display: none;
+    }
+    
+   
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 0px;
+    padding-bottom: 8px;
 }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width:375) {
+    .mdc-card {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 310px !important;
+    }
+    .mat-mdc-card-content {
+        display: block;
+        padding: 0 16px;
+        width: 310px !important;
+    }
+    .socialLink{
+        font-size:12px;
+    }
+
+    .contractArea-child2 {
+      
+        padding: 5px;
+    }
+
+  
+
+    .mat-mdc-text-field-wrapper {
+        width: 100px !important;
+        height: 57px;
+    }
+    .example-full-width{
+        width: 125px  !important;
+        height: 57px;
+        padding: 0%;
+    }
+    
+
+    .example-full-width1{
+        width: 275px !important;
+        height: 57px;
+    }
+    .example-full-width2{
+        width: 275px !important;
+        height: 10px !important;
+    }
+    button{
+        margin-top: 30px;
+    }
+   .mapouter{
+   display: none;
+    }
+    
+   
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 0px;
+    padding-bottom: 8px;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (max-width: 992px) {
+
+    .mdc-card {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 255px !important;
+    }
+    .mat-mdc-card-content {
+        display: block;
+        padding: 0 16px;
+        width: 255px !important;
+    }
+    .socialLink{
+        font-size:12px;
+    }
+
+    .contractArea-child2 {
+      
+        padding: 5px;
+    }
+
+  
+
+    .mat-mdc-text-field-wrapper {
+        width: 90px !important;
+        height: 57px;
+    }
+    .example-full-width{
+        width: 90px  !important;
+        height: 57px;
+        padding: 0%;
+    }
+    
+
+    .example-full-width1{
+        width: 210px !important;
+        height: 57px;
+    }
+    .example-full-width2{
+        width: 210px !important;
+        height: 10px !important;
+    }
+    button{
+        margin-top: 30px;
+    }
+   .mapouter{
+   display: none;
+    }
+    
+   
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 0px;
+    padding-bottom: 8px;
+}
+
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (max-width: 1200px) {
+    .mdc-card {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 380px !important;
+    }
+    .mat-mdc-card-content {
+        display: block;
+        padding: 0 16px;
+        width: 380px !important;
+    }
+    .socialLink{
+        font-size:12px;
+    }
+
+    .contractArea-child2 {
+      
+        padding: 5px;
+    }
+
+  
+
+    .mat-mdc-text-field-wrapper {
+        width: 125px !important;
+        height: 57px;
+    }
+    .example-full-width{
+        width: 125px  !important;
+        height: 57px;
+        padding: 0%;
+    }
+    
+
+    .example-full-width1{
+        width: 310px !important;
+        height: 57px;
+    }
+    .example-full-width2{
+        width: 310px !important;
+        height: 10px !important;
+    }
+    button{
+        margin-top: 30px;
+    }
+   .mapouter{
+   display: none;
+    }
+    
+   
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 0px;
+    padding-bottom: 8px;
+}
+
+} */
+/* @media screen  and (max-width: 375px) {
+    .mdc-card {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 140px !important;
+    }
+    .mat-mdc-card-content {
+        display: block;
+        padding: 0 16px;
+        width: 140px !important;
+    }
+    .socialLink{
+        font-size:12px;
+    }
+
+    .contractArea-child2 {
+      
+        padding: 5px;
+    }
+
+  
+
+    .mat-mdc-text-field-wrapper {
+        width: 100px !important;
+        height: 57px;
+    }
+    .example-full-width{
+        width: 115px  !important;
+        height: 57px;
+        padding: 0%;
+    }
+    
+
+    .example-full-width1{
+        width: 250px !important;
+        height: 57px;
+    }
+    .example-full-width2{
+        width: 250px !important;
+        height: 10px !important;
+    }
+    button{
+        margin-top: 30px;
+    }
+   .mapouter{
+   display: none;
+    }
+    
+   
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 0px;
+    padding-bottom: 8px;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 414px)  {
+    .contractArea-child1{
+        width: 400px !important;
+    }
+    .mdc-card {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 400px !important;
+    }
+    .mat-mdc-card-content {
+        display: block;
+        padding: 0 16px;
+    }
+    .socialLink{
+        font-size:12px;
+    }
+    .contractArea-child2 {
+        padding: 5px;
+    }
+    .mat-mdc-text-field-wrapper {
+        width: 120px !important;
+        height: 57px;
+    }
+    .example-full-width{
+        width: 120px  !important;
+        height: 57px;
+        padding: 0%;
+    }
+    
+    .example-full-width1{
+        width: 280px !important;
+        height: 57px;
+    }
+    .example-full-width2{
+        width: 280px !important;
+        height: 10px !important;
+    }
+    button{
+        margin-top: 30px;
+    }
+   .mapouter{
+      display: none;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 820px)   {
+    .mdc-card {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 340px !important;
+    }
+    .mat-mdc-card-content {
+        display: block;
+        padding: 0 16px;
+        width: 320px !important;
+    }
+    .socialLink{
+        font-size:12px;
+    }
+
+    .contractArea-child2 {
+      
+        padding: 5px;
+    }
+
+  
+
+    .mat-mdc-text-field-wrapper {
+        width: 120px !important;
+        height: 57px;
+    }
+    .example-full-width{
+        width: 125px  !important;
+        height: 57px;
+        padding: 0%;
+    }
+    
+
+    .example-full-width1{
+        width: 280px !important;
+        height: 57px;
+    }
+    .example-full-width2{
+        width: 280px !important;
+        height: 10px !important;
+    }
+    button{
+        margin-top: 30px;
+    }
+   .mapouter{
+   display: none;
+    }
+    
+   
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 0px;
+    padding-bottom: 8px;
+}
+}
+@media screen and (max-width: 912px)   {
+    .mdc-card {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 370px !important;
+    }
+    .mat-mdc-card-content {
+        display: block;
+        padding: 0 16px;
+        width: 370px !important;
+    }
+    .socialLink{
+        font-size:12px;
+    }
+
+    .contractArea-child2 {
+      
+        padding: 5px;
+    }
+
+  
+
+    .mat-mdc-text-field-wrapper {
+        width: 120px !important;
+        height: 57px;
+    }
+    .example-full-width{
+        width: 125px  !important;
+        height: 57px;
+        padding: 0%;
+    }
+    
+
+    .example-full-width1{
+        width: 280px !important;
+        height: 57px;
+    }
+    .example-full-width2{
+        width: 280px !important;
+        height: 10px !important;
+    }
+    button{
+        margin-top: 30px;
+    }
+   .mapouter{
+   display: none;
+    }
+    
+   
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 0px;
+    padding-bottom: 8px;
+}
+}
+
+@media screen and (max-width: 1024px)   {
+    .mdc-card {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 300px !important;
+    }
+    .mat-mdc-card-content {
+        display: block;
+        padding: 0 16px;
+        width: 300px !important;
+    }
+    .socialLink{
+        font-size:12px;
+    }
+
+    .contractArea-child2 {
+      
+        padding: 5px;
+    }
+
+  
+
+    .mat-mdc-text-field-wrapper {
+        width: 110px !important;
+        height: 57px;
+    }
+    .example-full-width{
+        width: 110px  !important;
+        height: 57px;
+        padding: 0%;
+    }
+    
+
+    .example-full-width1{
+        width: 255px !important;
+        height: 57px;
+    }
+    .example-full-width2{
+        width: 255px !important;
+        height: 10px !important;
+    }
+    button{
+        margin-top: 30px;
+    }
+  
+.mapouter{
+   text-align:right;height:300px;width:100%;
+}
+
+.gmap_canvas{
+    background:none!important;height:300px;width:100%;
+}
+   
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 0px;
+    padding-bottom: 8px;
+}
+
+
+
+}
+
+@media screen and (max-width: 912px)   {
+    .mdc-card {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 375px !important;
+    }
+    .mat-mdc-card-content {
+        display: block;
+        padding: 0 16px;
+        width: 375px !important;
+    }
+    .socialLink{
+        font-size:12px;
+    }
+
+    .contractArea-child2 {
+      
+        padding: 5px;
+    }
+
+  
+
+    .mat-mdc-text-field-wrapper {
+        width: 130px !important;
+        height: 57px;
+    }
+    .example-full-width{
+        width: 130px  !important;
+        height: 57px;
+        padding: 0%;
+    }
+    
+
+    .example-full-width1{
+        width: 315px !important;
+        height: 57px;
+    }
+    .example-full-width2{
+        width: 315px !important;
+        height: 10px !important;
+    }
+    button{
+        margin-top: 30px;
+    }
+  
+.mapouter{
+   text-align:right;height:300px;width:100%;
+}
+
+.gmap_canvas{
+    background:none!important;height:300px;width:100%;
+}
+   
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 0px;
+    padding-bottom: 8px;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 540px)   {
+    .mdc-card {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 450px !important;
+    }
+    .mat-mdc-card-content {
+        display: block;
+        padding: 0 16px;
+        width: 450px !important;
+    }
+    .socialLink{
+        font-size:12px;
+    }
+
+    .contractArea-child2 {
+      
+        padding: 5px;
+    }
+
+  
+
+    .mat-mdc-text-field-wrapper {
+        width: 170px !important;
+        height: 57px;
+    }
+    .example-full-width{
+        width: 170px  !important;
+        height: 57px;
+        padding: 0%;
+    }
+    
+
+    .example-full-width1{
+        width: 393px !important;
+        height: 57px;
+    }
+    .example-full-width2{
+        width: 393px !important;
+        height: 10px !important;
+    }
+    button{
+        margin-top: 30px;
+    }
+  
+.mapouter{
+   text-align:right;height:300px;width:100%;
+}
+
+.gmap_canvas{
+    background:none!important;height:300px;width:100%;
+}
+   
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 0px;
+    padding-bottom: 8px;
+}
+
+
+
+}
+
+
+ */
