@@ -26,7 +26,7 @@ const routes: Routes = [
    { path: 'education', component: QualificationComponent },
    { path: 'skill', component: SkillComponent },
    { path: 'social', component: SocialMediaComponent },
-  //  { path: 'admin', component: AdminComponent },
+   { path: 'admin', component: AdminComponent },
 
 ];
 

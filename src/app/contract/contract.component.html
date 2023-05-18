@@ -1,10 +1,8 @@
 
 <br>
 <br>
-
-
-<div class="contact" style="display: block;">
-  <h1 style="width: 100px; display: block;">Contact</h1>
+<div class="contact">
+  <h1 style="width: 100px;">Contact</h1>
   <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top: auto;display: block;"></div>
 </div>
 <!-- <mat-card>
@@ -18,7 +16,7 @@
 </mat-card>
 <div> -->
  
-<div class="contractArea" style="display: block;">
+<!-- <div class="contractArea" style="display: block;">
 
     <div class="contractArea-child1" style="display: block;">
 
@@ -90,4 +88,55 @@
             </mat-card-content>
         </mat-card>
     </div>
+</div> -->
+<br>
+<div class="row">
+<div class="row11">
+  <mat-card>
+    <mat-card-content>
+
+      <div class="socialLink">
+        <span *ngIf="contractDataList.length>0"> <a><i class="fa fa-map-marker"></i></a> {{contractDataList[0].Address}}</span>
+       </div>
+       <br>
+       <div class="socialLink">
+        <span *ngIf="contractDataList.length>0"> <a><i class="fa fa-envelope"></i></a> {{contractDataList[0].Email}}</span>
+       </div>
+       <br>
+       <div class="socialLink">
+        <span *ngIf="contractDataList.length>0"> <a><i class="fa fa-phone"></i></a>Call : {{contractDataList[0].Phone}}</span>
+       </div>          
+    </mat-card-content>
+  </mat-card>
+</div>
+<div class="row11">
+  <form [formGroup]="contactEntry">
+    <mat-card>
+      <br>
+     
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Name" formControlName="Name">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline" >
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email" formControlName="Email">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Subject</mat-label>
+          <input matInput placeholder="Subject" formControlName="Subject">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Message</mat-label>
+          <textarea matInput formControlName="Message"></textarea>
+        </mat-form-field>
+        <button mat-button (click)="OnSave()" color="primary" style="background-color: #2971d6 ;color: white;">
+          <i class="fa fa-paper-plane"></i> Send
+        </button>
+     
+    </mat-card>
+  </form>
+ 
+</div>
 </div>

@@ -1,9 +1,9 @@
-
+/* 
 .aboutMainContent .aboutImage{
   height: 400px;
   width: 100%;
   margin-top:0px;
-  /* background-image: url("../assets/BannerCodingImg.jpg"); */
+  
 }
 
 .headingText1 {
@@ -387,10 +387,57 @@
     font-weight: 100;
  }
 }
+ */
 
 
+ .mat-mdc-progress-bar {
+  --mdc-linear-progress-active-indicator-color: #2971d6;
+}
+:host ::ng-deep mat-progress-bar {
+ height: 12px;
+}
 
+:host ::ng-deep mat-progress-bar .mdc-linear-progress__bar-inner {
+ border-top-width: 12px;
+}
 
+.row{
+  width: 100%;
+}
+.row p{
+  text-align: justify;
+  font-size: 14px;
+}
+
+.row1{
+  width: 100%;
+}
+
+.row11{
+  float: left;
+   width: 30%;
+   padding: 1%;
+}
+
+.aboutMainContent-child-Image{
+  width: 100%;
+  height: 100%;
+}
+
+button{
+  width: 60%;
+  text-align: left !important;
+  background-color: #2971d6 !important;
+}
+@media screen and (max-width: 420px) and  (min-width: 285px)  {
+  button{
+    font-size: 10px;
+  }
+  p{
+    font-size: 10px !important;
+    line-height: 10px !important;
+  }
+}
 
 
 /* @media screen and (max-width: 400px) {

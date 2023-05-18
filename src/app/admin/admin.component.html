@@ -1,2 +1,31 @@
 
-<div id="map"></div>
+<br>
+<mat-card>
+    <br>
+  <table   style="text-align: center;" >
+    
+   
+  <tr>
+    <th style="text-align: center;">SL No</th>
+    <th style="text-align: center;">Name</th>
+    <th style="text-align: center;">Email</th>
+    <th style="text-align: center;">Subject</th>
+    <th style="text-align: center;width: 50%;">Message</th>
+    <th style="text-align: center;">Action</th>
+  </tr>
+    <tr *ngFor="let l of contactList | async;let i=index">
+    <td style="text-align: left;">{{i+1}}</td>
+    <td style="text-align: left;">{{l.Name}}</td>
+    <td style="text-align: left;">{{l.Email}}</td>
+    <td style="text-align: left;">{{l.Subject}}</td>
+    <td style="text-align: left;width: 50%;">{{l.Message}}</td>
+    <td>
+        <button mat-button (click)="Delete(l)" color="primary" style="background: #dd1919;color: white;margin:10px;">Delete</button>
+    </td>
+   
+   </tr>
+  </table>
+  <br>
+  <br>
+  </mat-card>
+  

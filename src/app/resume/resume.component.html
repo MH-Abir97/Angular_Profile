@@ -81,7 +81,7 @@
 
 </div> -->
 
-
+<!-- 
 <h1 style="display: block;width:100px;width: 100px;">Resume</h1>
   <div style="height: 4px;width:55px;background-color: #1f7bc5;margin-top:-10px;display: block;"></div>
 <div class="mat-toolbar-Content" style="display: block;">
@@ -202,7 +202,8 @@
       </mat-toolbar-row>
     </mat-toolbar>
   </div>
-</div>
+</div> -->
+
 
 
 <!--
@@ -242,4 +243,119 @@
 
 
 </div> -->
+
+
+<div class="resumeArea">
+    <h1>Resume</h1>
+    <div style="height: 4px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
+</div>
+<br>
+<div class="resumeArea2">
+<div class="col-md-6"  >
+  <!-- <h1 style="text-transform: capitalize;">Language Skill</h1>
+  <button mat-stroked-button *ngIf="SkillsList.length >0"  style="background-color: #149ddd;color: white;"> Backend Skills</button> 
+  <div *ngFor="let p of languageList1" style="width: 80%;">
+      
+      <p style="font-size: 14px;line-height: 2px;">{{p.LanguageName}} ({{p.LanguagePercent}}%)</p>
+     <p style="line-height: 2px;">
+      <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>
+     </p>
+     
+  </div>
+ 
+    <button mat-stroked-button *ngIf="SkillsList.length >0"  style="background-color: #149ddd;color: white;"> Front-End Skills</button> 
+    <div *ngFor="let p of languageList2"  style="width: 80%;">
+      <p style="font-size: 14px;line-height: 1px;">{{p.LanguageName}} ({{p.LanguagePercent}}%)</p>
+      <p style="line-height: 1px;">
+        <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>
+      </p>
+      
+    </div> -->
+
+  <h1 style="text-transform: capitalize;">Education</h1>
+
+  <button mat-stroked-button  style="background-color: #149ddd;color: white;">Contact Info</button>
+  <p class="textAddress">{{UserDataList[0].Address}}</p>
+  <p  >{{UserDataList[0].Phone}} </p>
+  <p  >{{UserDataList[0].Email}}</p>
+
+  <div *ngFor="let q of qualificationList ;let i=index;">
+    <button mat-stroked-button  style="background-color: #149ddd;color: white;">{{q.Session }}</button>
+    <p >{{q.institutionName}}</p>
+    <p >{{q.EducationBackground}} </p>
+    <p >{{q.InstLocation}}</p>
+  </div>
+  
+ 
+</div>
+<div class="col-md-6">
+  <h1 style="text-transform: capitalize;">Professional Experience</h1>
+   <div class="skillBtn">
+
+    <button mat-stroked-button *ngIf="UserDataList.length >0"  style="background-color: #149ddd;color: white;"> {{UserDataList[0].formAdnToJoining}}</button>
+
+    <p style="font-size: 16px; font-weight: bold;line-height: normal;font-style: italic;"> {{UserDataList[0].WorkingOrganization}}</p>
+
+    <p style="font-size: 16px; font-weight: 500;line-height: normal;font-style: italic;">{{UserDataList[0].Designation}}</p>
+    
+    <button mat-stroked-button *ngIf="UserDataList.length >0"  style="background-color: #149ddd;color: white;"> {{UserDataList[1].formAdnToJoining}} At</button>
+    <p style="font-size: 16px; font-weight: bold;line-height: normal;font-style: italic;"> {{UserDataList[1].WorkingOrganization}}</p>
+    <p style="font-size: 16px; font-weight: 500;line-height: normal;font-style: italic;">{{UserDataList[1].Designation}}</p>
+  </div>
+
+   <div class="skillBtn">
+    
+    <br>
+    <button mat-stroked-button *ngIf="SkillsList.length >0"  style="background-color: #149ddd;color: white;"> {{SkillsList[0].Project}}</button>
+    <br>
+    <br>
+    <div *ngFor="let f of SkillsList;let i =index">
+      <span>{{i +1}}. {{f.ModuleName}}</span>
+    </div>
+   
+  </div>
+   <br>
+  <div class="skillBtn">
+    <button mat-stroked-button *ngIf="OthersSkillList.length >0"  style="background-color: #149ddd;color: white;"> {{OthersSkillList[0].Project}}</button>
+    <br>
+    <br>
+    <div *ngFor="let f of OthersSkillList;let i =index">
+      <span>{{i +1}}. {{f.ModuleName}}</span>
+    </div>
+   
+  </div>
+  <br>
+  <div class="skillBtn">
+   
+    <button mat-stroked-button *ngIf="problemSolveSkill.length >0"  style="background-color: #149ddd;color: white;"> {{problemSolveSkill[0].Project}}</button>
+    <br>
+    <br>
+    <div *ngFor="let f of problemSolveSkill;let i =index">
+      <span>{{i +1}}. {{f.ModuleName}}</span>
+    </div>
+   
+  </div>
+  <br>
+  <div class="skillBtn">
+    <button mat-stroked-button *ngIf="frontEndSkillList.length >0"  style="background-color: #149ddd;color: white;"> {{frontEndSkillList[0].Project}}</button>
+    <br>
+    <br>
+    <div *ngFor="let f of frontEndSkillList ;let i =index">
+      <span>{{i +1}}. {{f.ModuleName}}</span>
+    </div>
+   
+  </div>
+  <br>
+  <div class="skillBtn">
+
+    <button mat-stroked-button *ngIf="sqlSkillList.length >0"  style="background-color: #149ddd;color: white;"> {{sqlSkillList[0].Project}}</button>
+    <br>
+    <br>
+    <div *ngFor="let f of sqlSkillList;let i =index">
+      <span>{{i +1}}. {{f.ModuleName}}</span>
+    </div>
+   
+  </div>
+</div>
+</div>
 

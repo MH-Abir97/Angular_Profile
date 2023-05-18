@@ -2,65 +2,84 @@
   <div class="aboutMainContent1" style="margin-top:220px" id="#about">
       <h1>About</h1>
       <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
-      <p>
+      <!-- <p>
         <span *ngIf="UserDataList.length>0"> {{UserDataList[0].DescriptionTwo}}</span>
-      </p>
+      </p> -->
 
   </div>
-  <div class="aboutMainContent2">
+  <div class="row">
+      <p>
+        <span *ngIf="UserDataList.length>0"> {{UserDataList[0].DescriptionTwo}}</span>
+      </p> 
+  </div>
+  <div class="row1">
+   <div class="row11">
+    <img class="aboutMainContent-child-Image" src="../assets/profile.jpg" >
+   </div>
+   <div class="row11">
+    <button mat-stroked-button  style="background-color: #149ddd;color: white;width:100%">Back-End Skills</button>
+    <div *ngFor="let p of languageList1" style="width: 100%;">
+      
+      <p style="font-size: 14px;line-height: 2px;">{{p.LanguageName}} ({{p.LanguagePercent}}%)</p>
+     <p style="line-height: 2px;">
+      <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>
+     </p>
+     
+    </div>
+   </div>
+   <div class="row11">
+    <button mat-stroked-button  style="background-color: #149ddd;color: white;width:100%">Front-End Skills</button>
+    <div *ngFor="let p of languageList2" style="width: 100%;">
+      
+      <p style="font-size: 14px;line-height: 2px;">{{p.LanguageName}} ({{p.LanguagePercent}}%)</p>
+     <p style="line-height: 2px;">
+      <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>
+     </p>
+     
+    </div>
+   </div>
+  </div>
+  <!-- <div class="aboutMainContent2">
     <div class="aboutMainContent-child1">
       <img class="aboutMainContent-child-Image" src="../assets/profile.jpg" height="100" width="100">
     </div>
-    <div class="commontext">
+    <button mat-stroked-button  style="background-color: #149ddd;color: white;">Language Skills</button> -->
+    <!-- <div class="commontext">
       <h1 >ASP.NET And Angular developer </h1>
       <p >
         <span *ngIf="UserDataList.length>0"> {{UserDataList[0].DescriptionOne}}</span>
       </p>
-    </div>
+    </div> -->
 
-    <div class="aboutMainsubContent">
+    <!-- <div class="aboutMainsubContent">
 
       <div class="aboutMainContent-child2">
-        <ul>
-            <li>
-                <i class="fa fa-chevron-right"></i><strong >Degree :</strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].Degree}}</span>
-            </li>
-            <li>
-                <i class="fa fa-chevron-right"></i><strong>Session : </strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].Session}}</span>
-            </li>
-            <li>
-                <i class="fa fa-chevron-right"></i><strong>University :</strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].University}}</span>
-            </li>
-            <li>
-                <i class="fa fa-chevron-right"></i><strong>Grade : </strong> <span *ngIf="UserDataList.length>0"> {{UserDataList[0].Grade}}</span>
-            </li>
-
-        </ul>
-
+        <div *ngFor="let p of languageList1" style="width: 80%;">
+      
+          <p style="font-size: 14px;line-height: 2px;">{{p.LanguageName}} ({{p.LanguagePercent}}%)</p>
+         <p style="line-height: 2px;">
+          <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>
+         </p>
+         
+      </div>
+       
       </div>
       <div class="aboutMainContent-child3">
-        <ul>
-            <li>
-                <i class="fa fa-chevron-right"> </i> <strong>Date of Birth : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].DateOfBirth}}</span>
-            </li>
-            <li>
-                <i class="fa fa-chevron-right"></i> <strong>Website : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].Website}}</span>
-            </li>
-            <li>
-                <i class="fa fa-chevron-right"></i> <strong>Phone : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].Phone}}</span>
-            </li>
-            <li>
-                <i class="fa fa-chevron-right"></i> <strong>Address : </strong><span *ngIf="UserDataList.length>0"> {{UserDataList[0].Address}}</span>
-            </li>
-
-        </ul>
+       
+        <div *ngFor="let p of languageList2"  style="width: 80%;">
+          <p style="font-size: 14px;line-height: 1px;">{{p.LanguageName}} ({{p.LanguagePercent}}%)</p>
+          <p style="line-height: 1px;">
+            <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>
+          </p>
+          
+        </div>
       </div>
-    </div>
+    </div> -->
 
 
-  </div>
+  <!-- </div> -->
 
-
+<!-- 
   <div style="margin-top: 320px;">
     <h1>Facts</h1>
     <div style="height: 3px;width:55px;background-color: #1f7bc5;margin-top:-10px;"></div>
@@ -111,24 +130,8 @@
           <mat-progress-bar mode="determinate" value="{{p.LanguagePercent}}"></mat-progress-bar>
         </p>
       </div>
-      <!-- <label>HTML</label>
-      <p>
-        <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
-      </p>
-      <label>CSS</label>
-      <p>
-        <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
-      </p>
-      <label>Java Script</label>
-      <p>
-        <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-      </p>
-      <label>Angular</label>
-      <p>
-        <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-      </p> -->
-
+    
     </div>
 
-  </div>
+  </div> -->
   </section>

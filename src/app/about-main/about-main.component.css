@@ -1,324 +1,48 @@
-
-.aboutMainContent .aboutImage{
-  height: 400px;
-  width: 100%;
-  margin-top:0px;
-  /* background-image: url("../assets/BannerCodingImg.jpg"); */
-}
-
-.headingText1 {
-    margin-top:-260px;
-    color: white;
-    margin-left: 30%;
-    font-size: 46px;
-    font-weight: bold;
-
-}
-.headingText2 {
-    margin-top:-10px;
-    color: white;
-    margin-left: 26%;
-    font-size: 46px;
-    font-weight: bold;
-
-}
-
-.headingText3{
-    margin-top:-10px;
-    color: white;
-    margin-left: 46%;
-    font-size: 46px;
-    font-weight: bold;
-}
-.headingText2{
-    margin-top:-30px;
-    color: white;
-    margin-left: 30%;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.aboutMainContent1 p{
-    text-align: justify;
-}
-
-.aboutMainContent2 {
-    width: 100%;
-
-}
-.aboutMainContent2 p{
-  margin-right: 20px;
-}
-.aboutMainContent2 .aboutMainContent-child1{
-    float: left;
-    width: 33%;
-}
-.aboutMainContent2 .aboutMainContent-child2{
-    float: left;
-    width: 33%;
-    list-style-type:none;
-
-}
-.aboutMainContent2 .aboutMainContent-child2 ul li{
-  list-style-type:none;
-  padding-top: 10px;
-  font-size: 15px;
-}
-.aboutMainContent2 .aboutMainContent-child3{
-    float: left;
-    width: 33%;
-
-}
-.aboutMainContent2 .aboutMainContent-child3 ul li{
-  list-style-type:none;
-  padding-top: 10px;
-  font-size: 15px;
-}
- ul li{
-    list-style-type:none;
-}
-
-.aboutMainContent-child-Image
-{
-  height: 350px;
-  width: 95%;
-  box-shadow: 5px 5px 5px 5px white ;
-}
-
-.commontext{
-  margin-left: 36%;
-  text-align: justify;
-}
-.commontext h1{
-  text-transform: uppercase;
-}
-.commontext p{
-  text-align: justify;
-  font-size: 16px;
-}
-
-.aboutMainContent3{
-  height: 150px;
-}
-
-.aboutMainContent3 .aboutMainContent3-child1{
- float: left;
- width: 22%;
- margin-left: 3%;
-
-}
-.aboutMainContent3 .aboutMainContent3-child1 p{
-  margin: -38px 64px;
-  width: 100%;
- font-weight: bold;
- }
-.aboutMainContent3 .aboutMainContent3-child2{
-  float: left;
-  width: 22%;
-
- margin-left: 3%;
-}
-.aboutMainContent3 .aboutMainContent3-child2 p{
-  margin: -38px 70px;
-  font-weight: bold;
-  width: 100%;
-}
-.aboutMainContent3 .aboutMainContent3-child3{
-  float: left;
-  width: 22%;
-
- margin-left: 3%;
-}
-.aboutMainContent3 .aboutMainContent3-child3 p{
-  margin: -38px 64px;
-  font-weight: bold;
-  width: 100%;
-}
-.aboutMainContent3 .aboutMainContent3-child4{
-  float: left;
-  width: 22%;
-  margin-left: 3%;
-}
-.aboutMainContent3 .aboutMainContent3-child4 p{
-  margin: -38px 60px;
-  font-weight: bold;
-  width: 100%;
-}
-.SkillsArea{
-  width: 100%;
-
-}
-.SkillsArea-Child1{
-  width:48% ;
-  float: left;
-  margin-right:15px;
-  font-weight: bold;
-}
-.SkillsArea-Child2{
-  width:48% ;
-  float: left;
-  margin-left:15px;
-  font-weight: bold;
-}
-
 .mat-mdc-progress-bar {
-   --mdc-linear-progress-active-indicator-color: #149ddd;
+  --mdc-linear-progress-active-indicator-color: #2971d6;
 }
 :host ::ng-deep mat-progress-bar {
-  height: 12px;
+ height: 12px;
 }
 
 :host ::ng-deep mat-progress-bar .mdc-linear-progress__bar-inner {
-  border-top-width: 12px;
+ border-top-width: 12px;
 }
 
-
-@media screen and (max-width: 600px) and  (min-width: 550px)  {
-  .SkillsArea-Child1{
-    width: 200px !important;
-    padding: 0 !important;
-    float: left;
-    font-size: 12px;
-   }
-   .SkillsArea-Child2{
-     width: 200px !important;
-     padding: 0 !important;
-     float: left;
-     font-size: 12px;
-
-   }
-   .ResponsiveDecription{
-    text-align: justify;
-    font-size: 13px;
-    font-weight: 100;
- }
+.row{
+  width: 100%;
 }
-@media screen and (max-width: 650px) and  (min-width: 600px)  {
-  .SkillsArea-Child1{
-    width: 230px !important;
-    padding: 0 !important;
-    float: left;
-    font-size: 12px;
-   }
-   .SkillsArea-Child2{
-     width: 230px !important;
-     padding: 0 !important;
-     float: left;
-     font-size: 12px;
-
-   }
-   .ResponsiveDecription{
-    text-align: justify;
-    font-size: 13px;
-    font-weight: 100;
- }
+.row p{
+  text-align: justify;
+  font-size: 14px;
 }
 
-@media screen and (max-width: 912px) and  (min-width: 768px)  {
-  .SkillsArea-Child1{
-    width: 250px !important;
-    padding: 0 !important;
-    float: left;
-    font-size: 12px;
-   }
-   .SkillsArea-Child2{
-     width: 250px !important;
-     padding: 0 !important;
-     float: left;
-     font-size: 12px;
-
-   }
-   .ResponsiveDecription{
-    text-align: justify;
-    font-size: 13px;
-    font-weight: 100;
- }
+.row1{
+  width: 100%;
 }
 
-@media screen and (max-width: 912px) and  (min-width: 900px) {
-  .SkillsArea-Child1{
-    width: 395px !important;
-    padding: 0 !important;
-    float: left;
-    font-size: 12px;
-   }
-   .SkillsArea-Child2{
-     width: 395px !important;
-     padding: 0 !important;
-     float: left;
-     font-size: 12px;
-
-   }
-   .ResponsiveDecription{
-    text-align: justify;
-    font-size: 13px;
-    font-weight: 100;
- }
+.row11{
+  float: left;
+   width: 30%;
+   padding: 1%;
 }
 
-@media screen and (max-width: 1000px) and  (min-width: 913px)  {
-  .SkillsArea-Child1{
-    width: 270px !important;
-    padding: 0 !important;
-    float: left;
-    font-size: 12px;
-   }
-   .SkillsArea-Child2{
-     width: 270px !important;
-     padding: 0 !important;
-     float: left;
-     font-size: 12px;
-
-   }
-   .ResponsiveDecription{
-    text-align: justify;
-    font-size: 13px;
-    font-weight: 100;
- }
-}
-@media screen and (max-width: 1030px) and  (min-width: 1001px)  {
-  .SkillsArea-Child1{
-    width: 300px !important;
-    padding: 0 !important;
-    float: left;
-    font-size: 12px;
-   }
-   .SkillsArea-Child2{
-     width: 300px !important;
-     padding: 0 !important;
-     float: left;
-     font-size: 12px;
-
-   }
-   .ResponsiveDecription{
-    text-align: justify;
-    font-size: 13px;
-    font-weight: 100;
- }
-}
-@media screen and (max-width: 1080px) and  (min-width: 1025px)  {
-  .SkillsArea-Child1{
-    width: 320px !important;
-    padding: 0 !important;
-    float: left;
-    font-size: 12px;
-   }
-   .SkillsArea-Child2{
-     width: 320px !important;
-     padding: 0 !important;
-     float: left;
-     font-size: 12px;
-
-   }
-   .ResponsiveDecription{
-    text-align: justify;
-    font-size: 13px;
-    font-weight: 100;
- }
+.aboutMainContent-child-Image{
+  width: 100%;
+  height: 100%;
 }
 
-
-
-
-
-
+button{
+  width: 60%;
+  text-align: left !important;
+  background-color: #2971d6 !important;
+}
+@media screen and (max-width: 420px) and  (min-width: 285px)  {
+  button{
+    font-size: 10px;
+  }
+  p{
+    font-size: 10px !important;
+    line-height: 10px !important;
+  }
+}

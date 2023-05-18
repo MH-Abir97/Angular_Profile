@@ -1,4 +1,69 @@
-.mdc-card {
+.row{
+    width: 100%;
+}
+.row11 {
+    width: 48%;
+    float: left;
+    padding: 1%;
+}
+
+.socialLink a{
+
+    font-size: 18px;
+    display: inline-block;
+    background: #dff3fc;
+    color: #2971d6;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 18px;
+    transition: 0.3s;
+
+}
+
+.socialLink a:hover{
+
+    font-size: 18px;
+    display: inline-block;
+    background: #2971d6 !important;
+    color: white;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 18px;
+    transition: 0.3s;
+
+}
+.row11 .row22{
+    width: 15%;
+    float: left;
+    padding: 2%;
+}
+
+.row11 .mdc-card{
+ padding: 15px;
+}
+
+
+@media screen and (max-width: 420px) and  (min-width:285px)  {
+   .socialLink span{
+    font-size: 10px;
+   
+   }
+
+   .contact h1{
+    margin-top: 70px !important;
+  }
+  
+  }
+
+/* .mdc-card {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -206,7 +271,7 @@ button{
     padding-top: 0px;
     padding-bottom: 8px;
 }
-}
+} */
 
 /* Large devices (laptops/desktops, 992px and up) */
 /* @media only screen and (max-width: 992px) {

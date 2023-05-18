@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { Firestore, collection, collectionData } from '@angular/fire/firestore';
+import { Firestore, addDoc, collection, collectionData } from '@angular/fire/firestore';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-contract',
@@ -7,10 +8,16 @@ import { Firestore, collection, collectionData } from '@angular/fire/firestore';
   styleUrls: ['./contract.component.css']
 })
 export class ContractComponent {
-
+  contactEntry:FormGroup;
   contractDataList:any=[];
 
-  constructor(private _fireStore:Firestore) {
+  constructor(private _fireStore:Firestore,private _fb:FormBuilder) {
+   this.contactEntry=_fb.group({
+    Name:'',
+    Email:'',
+    Subject:'',
+    Message:'',
+   })
 
   }
   ngOnInit():void {
@@ -25,5 +32,18 @@ export class ContractComponent {
     this.contractDataList=collectionData(collectionInstance,{idField:'id'});
   }
 
+  OnSave(){
+   this.SaveData();
+  }
 
+
+  SaveData(){
+    const collectionInstance=collection(this._fireStore,'Contact');
+    addDoc(collectionInstance,this.contactEntry.value).then(()=>{
+      console.log('Save Successfully');
+    }).then((error)=>{
+      console.log(error);
+    })
+    this.contactEntry.reset();
+  }
 }

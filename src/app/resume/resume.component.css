@@ -1,6 +1,10 @@
 .resumeArea{
   width:100%;
 }
+.resumeArea h1{
+  width:10%;
+  display: block;
+}
 .resumeArea-Child4{
   width:47.8%;
   float: left;
@@ -160,6 +164,97 @@ mat-toolbar{
   width: 10% !important;
 }
 
+.col-md-6{
+  width: 48%;
+  float: left;
+  padding: 1%;
+  display: block;
+}
+
+/* .col-md-6 p{
+  font-size:14px;font-weight: bold;
+} */
+
+.col-md-6 p:nth-child(2) {
+  font-size:16px;font-weight:bold;
+  text-align: justify;
+  line-height: 8px;
+}
+.col-md-6 p:nth-child(3) {
+  font-size:16px;font-weight:400;
+  text-align: justify;
+  line-height: 8px;
+}
+.col-md-6 p:nth-child(4) {
+  font-size:14px;font-weight:400;
+  text-align: justify;
+}
+.col-md-6 span {
+  font-size:14px;font-weight:500;
+  text-align: justify;
+  line-height: 20px !important;
+
+}
+
+.mat-mdc-progress-bar {
+  --mdc-linear-progress-active-indicator-color: #2971d6;
+}
+:host ::ng-deep mat-progress-bar {
+ height: 5px;
+ border-radius: 5px !important;
+}
+
+:host ::ng-deep mat-progress-bar .mdc-linear-progress__bar-inner {
+ border-top-width: 5px !important;
+ border-radius: 5px !important;
+
+}
+
+/* .mat-mdc-progress-bar .mdc-linear-progress__buffer-bar {
+  background-color: rgba(63, 81, 181, 0.25);
+  border-radius: 2000px;
+} */
+
+.mat-mdc-progress-bar .mdc-linear-progress__buffer-bar {
+  background-color: rgba(63, 81, 181, 0.25) !important;
+  border-radius: 5px !important;
+}
+
+.col-md-6 button{
+  width: 60%;
+  text-align: right !important;
+  background-color: #2971d6 !important;
+}
+
+@media screen and (max-width: 420px) and  (min-width:285px)  {
+  .col-md-6 button{
+    font-size: 10px !important;
+    width: 100%;
+    text-align: left;
+    line-height: normal;
+  }
+  p{
+    font-size: 10px !important;
+    line-height: 5px;
+    text-align: left;
+  }
+  h1{
+    font-size: 10px !important;
+  }
+  .textAddress{
+    font-size: 10px !important;
+    line-height: 15px !important;
+    text-align: left !important;
+ 
+    
+  }
+  .resumeArea div{
+    margin-top: 10px !important;
+  }
+}
+/* .skillBtn button {
+  padding: 10px;
+} */
 
 /* @media screen and (max-width: 480px) and  (min-width: 320px)  {
   .mat-toolbar-Content1 {
